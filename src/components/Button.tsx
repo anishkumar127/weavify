@@ -18,13 +18,7 @@ export const Button = ({
   ...props
 }: ButtonProps) => {
   return (
-    <MuiButton
-      variant={variant}
-      color={color}
-      size={size}
-      fullWidth={fullWidth}
-      {...props}
-    >
+    <MuiButton variant={variant} color={color} size={size} fullWidth={fullWidth} {...props}>
       {children}
     </MuiButton>
   );

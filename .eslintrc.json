@@ -1,0 +1,75 @@
+{
+  // "extends": ["next/core-web-vitals", "next/typescript"],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaVersion": 2024, // 2020
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "plugins": ["react", "react-hooks", "unused-imports", "@typescript-eslint"],
+  "env": {
+    "browser": true,
+    "node": true,
+    "es6": true
+  },
+  "rules": {
+    // Unused imports: Report unused imports in the codebase
+    "unused-imports/no-unused-imports": "error",
+    "unused-imports/no-unused-vars": [
+      "warn",
+      {
+        "vars": "all",
+        "varsIgnorePattern": "^_",
+        "args": "none"
+      }
+    ],
+    // Disallow console.log statements (you can customize this rule)
+    "no-console": [
+      "error",
+      {
+        "allow": ["warn", "error"]
+      }
+    ],
+    // Enforce consistent indentation (2 spaces is common in JS/TS projects)
+    // "indent": ["error", 2],
+    // Enforce consistent linebreak style (LF is preferred for cross-platform compatibility)
+    // "linebreak-style": ["error", "unix"],
+    // Enforce semicolons at the end of statements
+    "semi": ["error", "always"],
+    // Enforce single quotes for strings
+    "quotes": ["error", "single"],
+    // Ensure proper use of react hooks
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn",
+    // Enforce prop types for better documentation in React components (if using PropTypes)
+    "react/prop-types": "off", // If you're using TypeScript, you can disable this.
+    // Enforce no duplicate imports
+    "no-duplicate-imports": "error",
+    // Prevent the use of inline comments after code
+    "no-inline-comments": "error",
+    // Enforce spacing around operators
+    "space-infix-ops": "error",
+    // Avoid multiple empty lines
+    "no-multiple-empty-lines": [
+      "error",
+      {
+        "max": 1,
+        "maxEOF": 1
+      }
+    ],
+    // Limit line length for readability
+    // "max-len": ["warn", { "code": 100 }],
+    // Ensure no functions are declared inside loops (to avoid unnecessary redefinition)
+    "no-loop-func": "error",
+    // Avoid using `any` type in TypeScript, forcing developers to use more specific types
+    "@typescript-eslint/no-explicit-any": "warn",
+    // Enforce using `const` where variables are not reassigned
+    "prefer-const": "error",
+    // Enforce consistent return statements
+    "consistent-return": "error",
+    // Enforce trailing commas for multiline objects/arrays (to prevent diffs breaking on new lines)
+    "comma-dangle": ["error", "always-multiline"]
+  }
+}

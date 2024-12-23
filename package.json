@@ -7,10 +7,12 @@
   "scripts": {
     "rollup": "rollup -c --bundleConfigAsCjs",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "commit": "cz"
+    "commit": "cz",
+    "format:check": "prettier . --check",
+    "format:fix": "prettier . --write"
   },
   "keywords": [],
-  "author": "",
+  "author": "Anish Kumar <anishbishnoi127@gmail.com>",
   "license": "ISC",
   "description": "",
   "peerDependencies": {
@@ -32,6 +34,8 @@
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-react": "^7.37.2",
     "eslint-plugin-react-hooks": "^5.1.0",
+    "eslint-plugin-unused-imports": "^4.1.4",
+
     "prettier": "^3.4.2",
     "rollup": "^4.29.1",
     "rollup-plugin-dts": "^6.1.1",
@@ -42,6 +46,9 @@
   },
   "dependencies": {
     "@fluentui/react-icons": "^2.0.270",
+    "@typescript-eslint/parser": "^8.18.1",
+    "@typescript-eslint/eslint-plugin": "^8.17.0",
+
     "autoprefixer": "^10.4.20",
     "commitizen": "^4.3.1",
     "postcss": "^8.4.49",
