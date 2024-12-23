@@ -1,10 +1,10 @@
 {
-  "name": "@anish/mui-custom-ui-components",
+  "name": "mui-custom-ui-components",
   "private": false,
   "version": "0.0.1",
   "type": "module",
-  "main": "dist/@anish/mui-custom-ui-components.umd.js",
-  "module": "dist/@anish/mui-custom-ui-components.esm.js",
+  "main": "dist/mui-custom-ui-components.umd.js",
+  "module": "dist/mui-custom-ui-components.esm.js",
   "types": "dist/main.d.ts",
   "files": ["dist"],
   "scripts": {
