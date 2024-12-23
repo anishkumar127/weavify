@@ -1,6 +1,6 @@
 {
-  "name": "mui-custom-ui-components",
-  "version": "1.0.3",
+  "name": "weavify",
+  "version": "1.0.0",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
   "types": "dist/index.d.ts",
