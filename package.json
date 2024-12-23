@@ -42,12 +42,15 @@
     "rollup-plugin-peer-deps-external": "^2.2.4",
     "tsconfig-paths": "^4.2.0",
     "tslib": "^2.8.1",
-    "typescript": "^5.7.2"
+    "typescript": "^5.7.2",
+    "@typescript-eslint/parser": "^8.18.1",
+    "@typescript-eslint/eslint-plugin": "^8.17.0"
   },
   "dependencies": {
     "@fluentui/react-icons": "^2.0.270",
-    "@typescript-eslint/parser": "^8.18.1",
-    "@typescript-eslint/eslint-plugin": "^8.17.0",
+
+    "prettier-plugin-tailwindcss": "^0.6.9",
+
 
     "autoprefixer": "^10.4.20",
     "commitizen": "^4.3.1",
