@@ -1,0 +1,41 @@
+{
+  "name": "@anish/mui-custom-ui-components",
+  "private": false,
+  "version": "0.0.1",
+  "type": "module",
+  "main": "dist/@anish/mui-custom-ui-components.umd.js",
+  "module": "dist/@anish/mui-custom-ui-components.esm.js",
+  "types": "dist/main.d.ts",
+  "files": ["dist"],
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "lint": "eslint .",
+    "preview": "vite preview"
+  },
+  "peerDependencies": {
+    "react": "^17.0.0 || ^18.3.1",
+    "react-dom": "^17.0.0 || ^18.3.1",
+    "@emotion/react": "^11.0.0",
+    "@emotion/styled": "^11.0.0",
+    "@mui/material": "^5.0.0 || ^6.0.0"
+  },
+  "dependencies": {
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.49",
+    "tailwindcss": "^3.4.17"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.17.0",
+    "@types/react": "^18.3.17",
+    "@types/react-dom": "^18.3.5",
+    "@vitejs/plugin-react": "^4.3.4",
+    "eslint": "^9.17.0",
+    "eslint-plugin-react-hooks": "^5.0.0",
+    "eslint-plugin-react-refresh": "^0.4.16",
+    "globals": "^15.13.0",
+    "typescript": "~5.6.2",
+    "typescript-eslint": "^8.18.1",
+    "vite": "^6.0.3"
+  }
+}
