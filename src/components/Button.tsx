@@ -1,21 +1,31 @@
 import React from 'react';
-import Button from '@mui/material/Button';
+import { Button as MuiButton, ButtonProps as MuiButtonProps } from '@mui/material';
 
-interface CustomButtonProps {
-  label: string;
-  onClick: () => void;
+interface ButtonProps extends MuiButtonProps {
+  children: React.ReactNode;
+  variant?: 'text' | 'outlined' | 'contained';
+  color?: 'primary' | 'secondary' | 'error' | 'info' | 'success' | 'warning';
+  size?: 'small' | 'medium' | 'large';
+  fullWidth?: boolean;
 }
 
-const CustomButton: React.FC<CustomButtonProps> = ({ label, onClick }) => {
+export const Button = ({
+  children,
+  variant = 'contained',
+  color = 'primary',
+  size = 'medium',
+  fullWidth = false,
+  ...props
+}: ButtonProps) => {
   return (
-    <Button
-      onClick={onClick}
-      variant="contained"
-      className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+    <MuiButton
+      variant={variant}
+      color={color}
+      size={size}
+      fullWidth={fullWidth}
+      {...props}
     >
-      {label}
-    </Button>
+      {children}
+    </MuiButton>
   );
 };
-
-export default CustomButton;
