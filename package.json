@@ -11,7 +11,21 @@
     "format:check": "prettier . --check",
     "format:fix": "prettier . --write"
   },
-  "keywords": [],
+  "keywords": [
+    "mui",
+    "emotion",
+    "theming",
+    "tailwind",
+    "css-in-js",
+    "weavify",
+    "react",
+    "react-theming",
+    "theme-provider",
+    "mui-theme-provider",
+    "mui-styled-components",
+    "emotion-theming",
+    "emotion-theme-provider"
+  ],
   "author": "Anish Kumar <anishbishnoi127@gmail.com>",
   "license": "ISC",
   "description": "",
