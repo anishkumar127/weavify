@@ -31,6 +31,14 @@ export default [
       typescript({ tsconfig: './tsconfig.json' }),
       terser(),
       postcss(),
+      // postcss({
+      // extract: true, // Extract CSS into a separate file
+      // minimize: true, // Minify CSS
+      // plugins: [
+      //   require('tailwindcss'),
+      //   require('autoprefixer'),
+      // ],
+      // }),
     ],
     external: ['react', 'react-dom'],
   },
