@@ -1,3 +1,4 @@
+// import './index.css';
 export { default as Tooltip } from './components/CustomTooltip';
 export { default as Dropdown } from './components/CustomAutocomplete';
 export { default as Input } from './components/CustomTextInput';
