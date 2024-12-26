@@ -52,7 +52,7 @@ const CustomOverflowSet: React.FC<OverflowSetProps> = ({ items, maxVisibleItems,
       {overflowItems.length > 0 && (
         <>
           <IconButton onClick={handleMenuOpen}>
-            <MoreVerticalRegular  className='text-[#038387]'/>
+            <MoreVerticalRegular className="text-[#038387]" />
           </IconButton>
           <Menu anchorEl={menuAnchor} open={Boolean(menuAnchor)} onClose={handleMenuClose}>
             {overflowItems.map((item) => (
