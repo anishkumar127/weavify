@@ -1,6 +1,6 @@
 {
   "name": "weavify",
-  "version": "1.4.0",
+  "version": "1.4.1",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
   "types": "dist/index.d.ts",
@@ -9,7 +9,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "commit": "cz",
     "format:check": "prettier . --check",
-    "format:fix": "prettier . --write"
+    "format:fix": "prettier . --write",
+    "prePublish": "npm run format:fix && npm run rollup && npm publish"
   },
   "keywords": [
     "mui",

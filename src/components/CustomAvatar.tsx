@@ -62,4 +62,3 @@ const CustomAvatar: React.FC<CustomAvatarProps> = ({
 };
 
 export default React.memo(CustomAvatar);
-
