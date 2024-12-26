@@ -8,5 +8,6 @@ export { default as Drawer } from './components/CustomDrawer';
 export { default as PeoplePicker } from './components/CustomPeoplePicker';
 export { default as Label } from './components/CustomInputLabel';
 export { default as Button } from './components/CustomButton';
+export { default as Avatar } from './components/CustomAvatar';
 // weavify
 // windly
