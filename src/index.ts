@@ -12,5 +12,6 @@ export { default as Button } from './components/CustomButton';
 export { default as Avatar } from './components/CustomAvatar';
 export { default as OverflowSet } from './components/CustomOverflowSet';
 export { default as OverflowSetV2 } from './components/CustomOverflowSetV2';
+export { default as ChoiceDropdown } from './components/ChoiceDropdown';
 // weavify
 // windly
