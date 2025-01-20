@@ -1,7 +1,3 @@
-Here’s a `README.md` section tailored for the `ChoiceDropdown` component within your existing `weavify` package. It focuses solely on `ChoiceDropdown` usage, similar to how popular libraries showcase specific components.
-
----
-
 # `ChoiceDropdown` Component
 
 The `ChoiceDropdown` is a multi-select dropdown component included in the `weavify` library. It is designed to offer a flexible and intuitive way to allow users to select multiple options, with built-in support for customization and Material-UI styling.
@@ -179,5 +175,3 @@ Example:
   wrapperStyle="custom-wrapper"
 />
 ```
-
----

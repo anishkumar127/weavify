@@ -1,4 +1,3 @@
-
 import { Autocomplete, InputLabel, TextField } from '@mui/material';
 
 interface ChoiceDropdownProps<T> {
@@ -71,13 +70,7 @@ function ChoiceDropdown<T>({
         size={size}
         id={id}
         value={value}
-        renderInput={(params) => (
-          <TextField
-            className="bg-white"
-            {...params}
-            placeholder={placeholder}
-          />
-        )}
+        renderInput={(params) => <TextField className="bg-white" {...params} placeholder={placeholder} />}
       />
     </div>
   );
