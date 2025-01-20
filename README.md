@@ -175,3 +175,53 @@ Example:
   wrapperStyle="custom-wrapper"
 />
 ```
+
+### TabList
+
+```tsx
+'use client';
+
+import React, { useState } from 'react';
+import TabList from './TabList'; // Importing the refactored TabList component
+
+const TicketDashboard = () => {
+  // State to track selected tab
+  const [selectedPivot, setSelectedPivot] = useState<string | null>('unassigned');
+
+  // Example pivot counts (coming from API, Redux, or Context)
+  const pivotCount = {
+    unassigned: 5,
+    teamsTickets: 12,
+    myTickets: 3,
+    myRequests: 8,
+    approval: 2,
+  };
+
+  // Define tab structure
+  const tabs = [
+    { key: 'unassigned', label: 'Unassigned' },
+    { key: 'teamsTickets', label: 'Teams Tickets' },
+    { key: 'myTickets', label: 'My Tickets' },
+    { key: 'myRequests', label: 'My Requests' },
+    { key: 'approval', label: 'Approval' },
+  ];
+
+  return (
+    <div className="min-h-screen bg-gray-100 p-4">
+      {/* Tab Navigation */}
+      <TabList selectedPivot={selectedPivot} setSelectedPivot={setSelectedPivot} pivotCount={pivotCount} tabs={tabs} />
+
+      {/* Content Based on Selected Tab */}
+      <div className="mt-6 rounded bg-white p-4 shadow-md">
+        {selectedPivot === 'unassigned' && <p>📌 Showing Unassigned Tickets</p>}
+        {selectedPivot === 'teamsTickets' && <p>🎟️ Viewing Team's Tickets</p>}
+        {selectedPivot === 'myTickets' && <p>📂 My Tickets Section</p>}
+        {selectedPivot === 'myRequests' && <p>📝 My Requests Area</p>}
+        {selectedPivot === 'approval' && <p>✅ Approvals Pending</p>}
+      </div>
+    </div>
+  );
+};
+
+export default TicketDashboard;
+```
