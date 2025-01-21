@@ -1,4 +1,3 @@
-'use client';
 import { Tab, TabProps, Tabs, TabsProps } from '@mui/material';
 
 interface TabItem {
