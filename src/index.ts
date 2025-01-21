@@ -14,5 +14,7 @@ export { default as Select } from './components/CustomSelect';
 export { default as Input } from './components/CustomTextInput';
 export { default as Tooltip } from './components/CustomTooltip';
 export { default as TabList } from './components/TabList';
+export { default as TinyTab } from './components/TinyTab';
 // weavify
+
 // windly
