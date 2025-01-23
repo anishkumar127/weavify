@@ -2,6 +2,24 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.9.0](https://github.com/anishkumar127/anish-mui-custom-ui-components/compare/v1.6.3...v1.9.0) (2025-01-23)
+
+
+### Features
+
+* tablist(pivot) ([7325a5b](https://github.com/anishkumar127/anish-mui-custom-ui-components/commit/7325a5b5db9bd03e7ff23535b05dbe39b632c41a))
+* tinytab ([bfd3498](https://github.com/anishkumar127/anish-mui-custom-ui-components/commit/bfd3498f394d49ceaf6f08c28c7e1f0a9a5f360e))
+
+
+### Bug Fixes
+
+* build was missing to publish on npm ([c6a44c7](https://github.com/anishkumar127/anish-mui-custom-ui-components/commit/c6a44c704c5cd78ec014344af6a3126354506840))
+* changed people picker newvalue to value bcz ts conflict ([e903805](https://github.com/anishkumar127/anish-mui-custom-ui-components/commit/e903805793b5fc64190c6575d9b55c7441949fd0))
+* disablePortal causing the issue of dropdown option below table cell was coming ([286d014](https://github.com/anishkumar127/anish-mui-custom-ui-components/commit/286d01469b4731dab7139505c10d0c589cc3cc28))
+* missing id field in types of peoplepicker ([7db3c26](https://github.com/anishkumar127/anish-mui-custom-ui-components/commit/7db3c263fc22c3a9b231b744a1127c4394dee060))
+* removed use client ([0539016](https://github.com/anishkumar127/anish-mui-custom-ui-components/commit/05390162b915f27a3c0846b747a8f33888ccb9e0))
+* removed use client from components ([e5aedae](https://github.com/anishkumar127/anish-mui-custom-ui-components/commit/e5aedae3c7f7bd6da163403b7a139bd10e7ff3e9))
+
 ### [1.6.3](https://github.com/anishkumar127/anish-mui-custom-ui-components/compare/v1.5.0...v1.6.3) (2025-01-20)
 
 ## 1.5.0 (2024-12-26)
