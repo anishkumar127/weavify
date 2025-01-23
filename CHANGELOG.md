@@ -2,6 +2,8 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.9.1](https://github.com/anishkumar127/anish-mui-custom-ui-components/compare/v1.9.0...v1.9.1) (2025-01-23)
+
 ## [1.9.0](https://github.com/anishkumar127/anish-mui-custom-ui-components/compare/v1.6.3...v1.9.0) (2025-01-23)
 
 
