@@ -11,6 +11,7 @@ import {
 import React, { SyntheticEvent } from 'react';
 
 interface Person {
+  id: number;
   name: string;
   email: string;
   avatar?: string;
@@ -19,7 +20,7 @@ interface Person {
 interface PeoplePickerProps {
   options: Person[];
   value: Person | null;
-  onChange: (event: SyntheticEvent<Element, Event>, newValue: Person | null) => void;
+  onChange: (event: SyntheticEvent<Element, Event>, value: Person | null) => void;
   label?: string;
   placeholder?: string;
   required?: boolean;
