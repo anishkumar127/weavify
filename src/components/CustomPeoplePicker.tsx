@@ -11,6 +11,7 @@ import {
 import React, { SyntheticEvent } from 'react';
 
 interface Person {
+  id: number;
   name: string;
   email: string;
   avatar?: string;
