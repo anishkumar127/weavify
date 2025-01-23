@@ -1,227 +1,241 @@
-# `ChoiceDropdown` Component
+# **Weavify - Reusable UI Components**
 
-The `ChoiceDropdown` is a multi-select dropdown component included in the `weavify` library. It is designed to offer a flexible and intuitive way to allow users to select multiple options, with built-in support for customization and Material-UI styling.
+**Weavify** is a collection of reusable **React UI components** built with **Material-UI (MUI) and Tailwind CSS**. It is designed to accelerate development, improve consistency, and provide a seamless UI/UX experience.
 
 ---
 
-## Installation
+## 📦 **Installation**
 
-First, install the `weavify` package if not already done:
+Install Weavify using npm:
 
-```bash
+```sh
 npm install weavify
 ```
 
----
+or with Yarn:
 
-## Importing the Component
-
-To use the `ChoiceDropdown` component, simply import it from the `weavify` library:
-
-```tsx
-import { ChoiceDropdown } from 'weavify';
+```sh
+yarn add weavify
 ```
 
+Ensure **Tailwind CSS** is set up in your project before using these components.
+
 ---
 
-## Basic Usage
+## 🛠️ **Usage**
 
-Here’s an example of how to use the `ChoiceDropdown` component:
+Weavify provides a collection of prebuilt UI components. Import them as needed:
 
 ```tsx
-import React, { useState } from 'react';
-import { ChoiceDropdown } from 'weavify';
-
-const options = ['Option 1', 'Option 2', 'Option 3', 'Option 4'];
-
-function App() {
-  const [selectedOptions, setSelectedOptions] = useState<string[]>([]);
-
-  const handleChange = (event: any, value: string[]) => {
-    setSelectedOptions(value);
-  };
-
-  return (
-    <ChoiceDropdown
-      id="example-dropdown"
-      options={options}
-      label="Select Options"
-      value={selectedOptions}
-      onChange={handleChange}
-      isLabelRequired={true}
-      placeholder="Choose options"
-    />
-  );
-}
-
-export default App;
+import {
+  CustomAutocomplete,
+  CustomDrawer,
+  ChoiceDropdown,
+  Input,
+  CustomInputLabel,
+  ReusableModal,
+  PeoplePicker,
+  TabList,
+  TinyTab,
+} from 'weavify';
 ```
 
----
-
-## Props
-
-Here are the available props for the `ChoiceDropdown` component:
-
-| Prop              | Type                               | Default            | Description                                                                   |
-| ----------------- | ---------------------------------- | ------------------ | ----------------------------------------------------------------------------- |
-| `options`         | `T[]`                              | **Required**       | The list of options to display in the dropdown.                               |
-| `label`           | `string`                           | `undefined`        | The label displayed above the dropdown.                                       |
-| `id`              | `string`                           | **Required**       | A unique identifier for the dropdown.                                         |
-| `isLabelRequired` | `boolean`                          | `false`            | If `true`, the label is displayed above the dropdown.                         |
-| `value`           | `T[]`                              | **Required**       | The currently selected options as an array.                                   |
-| `onChange`        | `(event: any, value: T[]) => void` | **Required**       | Callback triggered when the selected options change.                          |
-| `placeholder`     | `string`                           | `"Select options"` | Placeholder text displayed when no options are selected.                      |
-| `sx`              | `object`                           | `undefined`        | Custom Material-UI styles for the dropdown container.                         |
-| `size`            | `'small'` \| `'medium'`            | `'small'`          | Size of the dropdown, either 'small' or 'medium'.                             |
-| `searchStyle`     | `string`                           | `undefined`        | Additional CSS classes for customizing the search box.                        |
-| `wrapperStyle`    | `string`                           | `undefined`        | Additional CSS classes for styling the dropdown wrapper.                      |
-| `required`        | `boolean`                          | `false`            | Marks the input as required, showing an asterisk (\*) in the label if `true`. |
+Each component follows the **Material-UI** structure and is enhanced with **Tailwind CSS** for styling.
 
 ---
 
-## Advanced Example
+## 🌟 **Components Overview**
 
-Here’s an advanced usage example, including custom styling:
+### 1️⃣ **CustomAutocomplete**
+
+A flexible **autocomplete input** with dynamic options.
+
+#### **Props**
+
+| Prop          | Type                  | Default              | Description                                     |
+| ------------- | --------------------- | -------------------- | ----------------------------------------------- |
+| `options`     | `array`               | `[]`                 | List of selectable options                      |
+| `label`       | `string`              | `""`                 | Label displayed above the input                 |
+| `size`        | `'small' \| 'medium'` | `'small'`            | Input size                                      |
+| `placeholder` | `string`              | `'Select an option'` | Placeholder text                                |
+| `onChange`    | `function`            | `-`                  | Callback function triggered on selection change |
+
+#### **Example**
 
 ```tsx
-import React, { useState } from 'react';
-import { ChoiceDropdown } from 'weavify';
-
-const options = ['Red', 'Blue', 'Green', 'Yellow'];
-
-function App() {
-  const [selectedColors, setSelectedColors] = useState<string[]>([]);
-
-  const handleColorChange = (event: any, value: string[]) => {
-    setSelectedColors(value);
-  };
-
-  return (
-    <ChoiceDropdown
-      id="color-picker"
-      options={options}
-      label="Pick Colors"
-      value={selectedColors}
-      onChange={handleColorChange}
-      placeholder="Select colors"
-      size="medium"
-      searchStyle="custom-search"
-      wrapperStyle="custom-wrapper"
-    />
-  );
-}
-```
-
----
-
-## TypeScript Example
-
-If you’re using TypeScript, the `ChoiceDropdown` supports generics for type safety:
-
-```tsx
-interface Option {
-  id: number;
-  name: string;
-}
-
-const options: Option[] = [
-  { id: 1, name: 'Option A' },
-  { id: 2, name: 'Option B' },
-  { id: 3, name: 'Option C' },
-];
-
-function App() {
-  const [selectedOptions, setSelectedOptions] = useState<Option[]>([]);
-
-  const handleChange = (event: any, value: Option[]) => {
-    setSelectedOptions(value);
-  };
-
-  return (
-    <ChoiceDropdown
-      id="type-safe-dropdown"
-      options={options}
-      label="Custom Options"
-      value={selectedOptions}
-      onChange={handleChange}
-      placeholder="Choose options"
-    />
-  );
-}
-```
-
----
-
-## Customization
-
-You can customize the appearance of `ChoiceDropdown` using the following:
-
-- **`sx`**: Pass custom Material-UI styles.
-- **`searchStyle`**: Add custom CSS classes to style the search box.
-- **`wrapperStyle`**: Add custom CSS classes to style the dropdown wrapper.
-
-Example:
-
-```tsx
-<ChoiceDropdown
-  id="custom-styled-dropdown"
-  options={['Item 1', 'Item 2']}
-  value={[]}
-  onChange={() => {}}
-  placeholder="Styled Dropdown"
-  sx={{ borderColor: 'blue' }}
-  searchStyle="custom-search"
-  wrapperStyle="custom-wrapper"
+<CustomAutocomplete
+  id="demo-autocomplete"
+  options={['Option 1', 'Option 2']}
+  label="Choose an option"
+  onChange={(event, value) => console.log(value)}
 />
 ```
 
-### TabList
+---
+
+### 2️⃣ **CustomDrawer**
+
+A **side drawer** component used for navigation or overlays.
+
+#### **Props**
+
+| Prop          | Type                                         | Default       | Description                          |
+| ------------- | -------------------------------------------- | ------------- | ------------------------------------ |
+| `isOpen`      | `boolean`                                    | `false`       | Controls drawer visibility           |
+| `onClose`     | `function`                                   | `-`           | Function to close the drawer         |
+| `headerTitle` | `string`                                     | `""`          | Title displayed in the drawer header |
+| `size`        | `'small' \| 'medium' \| 'large' \| 'full'`   | `'medium'`    | Drawer size                          |
+| `type`        | `'temporary' \| 'persistent' \| 'permanent'` | `'temporary'` | Drawer behavior                      |
+
+#### **Example**
 
 ```tsx
-'use client';
-
-import React, { useState } from 'react';
-import TabList from './TabList'; // Importing the refactored TabList component
-
-const TicketDashboard = () => {
-  // State to track selected tab
-  const [selectedPivot, setSelectedPivot] = useState<string | null>('unassigned');
-
-  // Example pivot counts (coming from API, Redux, or Context)
-  const pivotCount = {
-    unassigned: 5,
-    teamsTickets: 12,
-    myTickets: 3,
-    myRequests: 8,
-    approval: 2,
-  };
-
-  // Define tab structure
-  const tabs = [
-    { key: 'unassigned', label: 'Unassigned' },
-    { key: 'teamsTickets', label: 'Teams Tickets' },
-    { key: 'myTickets', label: 'My Tickets' },
-    { key: 'myRequests', label: 'My Requests' },
-    { key: 'approval', label: 'Approval' },
-  ];
-
-  return (
-    <div className="min-h-screen bg-gray-100 p-4">
-      {/* Tab Navigation */}
-      <TabList selectedPivot={selectedPivot} setSelectedPivot={setSelectedPivot} pivotCount={pivotCount} tabs={tabs} />
-
-      {/* Content Based on Selected Tab */}
-      <div className="mt-6 rounded bg-white p-4 shadow-md">
-        {selectedPivot === 'unassigned' && <p>📌 Showing Unassigned Tickets</p>}
-        {selectedPivot === 'teamsTickets' && <p>🎟️ Viewing Team's Tickets</p>}
-        {selectedPivot === 'myTickets' && <p>📂 My Tickets Section</p>}
-        {selectedPivot === 'myRequests' && <p>📝 My Requests Area</p>}
-        {selectedPivot === 'approval' && <p>✅ Approvals Pending</p>}
-      </div>
-    </div>
-  );
-};
-
-export default TicketDashboard;
+<CustomDrawer isOpen={true} onClose={() => console.log('Closed')} headerTitle="My Drawer">
+  <p className="p-4">Drawer Content</p>
+</CustomDrawer>
 ```
+
+---
+
+### 3️⃣ **ChoiceDropdown**
+
+A **multi-select dropdown** powered by MUI's Autocomplete.
+
+#### **Props**
+
+| Prop          | Type       | Default            | Description                            |
+| ------------- | ---------- | ------------------ | -------------------------------------- |
+| `options`     | `array`    | `[]`               | List of available options              |
+| `value`       | `array`    | `[]`               | Selected values                        |
+| `onChange`    | `function` | `-`                | Callback triggered on selection change |
+| `placeholder` | `string`   | `'Select options'` | Placeholder text                       |
+
+#### **Example**
+
+```tsx
+<ChoiceDropdown
+  id="multi-dropdown"
+  options={['Item 1', 'Item 2']}
+  value={['Item 1']}
+  onChange={(event, value) => console.log(value)}
+/>
+```
+
+---
+
+### 4️⃣ **Input**
+
+A customizable **text input** with Tailwind styling.
+
+#### **Props**
+
+| Prop          | Type                                   | Default      | Description         |
+| ------------- | -------------------------------------- | ------------ | ------------------- |
+| `variant`     | `'outlined' \| 'filled' \| 'standard'` | `'outlined'` | Input style variant |
+| `label`       | `string`                               | `""`         | Label for the input |
+| `placeholder` | `string`                               | `""`         | Placeholder text    |
+| `type`        | `string`                               | `'text'`     | Input type          |
+
+#### **Example**
+
+```tsx
+<Input label="Your Name" placeholder="Enter your name" />
+```
+
+---
+
+### 5️⃣ **ReusableModal**
+
+A **popup modal** with customizable content.
+
+#### **Props**
+
+| Prop      | Type        | Default | Description                            |
+| --------- | ----------- | ------- | -------------------------------------- |
+| `open`    | `boolean`   | `false` | Controls modal visibility              |
+| `onClose` | `function`  | `-`     | Callback function to close the modal   |
+| `title`   | `string`    | `""`    | Modal title                            |
+| `content` | `ReactNode` | `""`    | Content displayed in the modal body    |
+| `actions` | `ReactNode` | `""`    | Buttons or actions in the modal footer |
+
+#### **Example**
+
+```tsx
+<ReusableModal open={true} onClose={() => console.log('Closed')} title="My Modal">
+  <p className="p-4">This is a modal.</p>
+</ReusableModal>
+```
+
+---
+
+### 6️⃣ **PeoplePicker**
+
+A **searchable contact picker** with avatar support.
+
+#### **Props**
+
+| Prop       | Type       | Default | Description                                |
+| ---------- | ---------- | ------- | ------------------------------------------ |
+| `options`  | `array`    | `[]`    | List of people `{id, name, email, avatar}` |
+| `value`    | `object`   | `null`  | Selected person object                     |
+| `onChange` | `function` | `-`     | Callback triggered on selection change     |
+
+#### **Example**
+
+```tsx
+<PeoplePicker
+  id="people-picker"
+  options={[{ id: 1, name: 'John Doe', email: 'john@example.com' }]}
+  value={null}
+  onChange={(event, value) => console.log(value)}
+/>
+```
+
+---
+
+### 7️⃣ **TabList**
+
+A **dynamic tab navigation** component.
+
+#### **Props**
+
+| Prop               | Type       | Default | Description                       |
+| ------------------ | ---------- | ------- | --------------------------------- |
+| `tabs`             | `array`    | `[]`    | List of tabs `{key, label}`       |
+| `selectedPivot`    | `string`   | `""`    | Active tab key                    |
+| `setSelectedPivot` | `function` | `-`     | Callback to change the active tab |
+
+#### **Example**
+
+```tsx
+<TabList
+  tabs={[
+    { key: 'tab1', label: 'Tab 1' },
+    { key: 'tab2', label: 'Tab 2' },
+  ]}
+  selectedPivot="tab1"
+  setSelectedPivot={(value) => console.log(value)}
+/>
+```
+
+---
+
+## 📚 **Contributing**
+
+We welcome contributions! Feel free to:
+
+- Submit issues for bugs or enhancements 🐞
+- Create pull requests to improve existing components ✨
+- Suggest new features that align with the project goals 🚀
+
+---
+
+## 📝 **License**
+
+Weavify is licensed under the **MIT License**.
+
+---
+
+### 🚀 **Get Started with Weavify Today!**
+
+Start integrating **MUI + Tailwind components** into your React projects with **Weavify**. 🚀✨
