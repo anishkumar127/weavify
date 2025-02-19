@@ -3,3 +3,9 @@ src
 rollup.config.js
 tsconfig.json
 .gitignore
+.vscode
+CHANGELOG.md
+.eslintrc.json
+.prettierignore
+.prettierrc.json
+prettier.config.js
