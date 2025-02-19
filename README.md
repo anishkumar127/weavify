@@ -216,7 +216,7 @@ A **searchable contact picker** with avatar support, allowing users to select a 
 
 #### **Example Usage**
 
-````tsx
+```tsx
 <PeoplePicker
   id="people-picker"
   options={[
@@ -268,7 +268,7 @@ A **multi-select** component that allows users to pick multiple people from a li
   required
   isLabelRequired
 />
-````
+```
 
 ---
 
