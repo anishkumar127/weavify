@@ -27,6 +27,7 @@ interface PeoplePickerProps {
   isLabelRequired?: boolean;
   wrapperStyle?: string;
   id: string;
+  disabled?: boolean;
 }
 
 const PeoplePicker: React.FC<PeoplePickerProps> = ({
@@ -39,6 +40,8 @@ const PeoplePicker: React.FC<PeoplePickerProps> = ({
   isLabelRequired = false,
   wrapperStyle,
   id,
+  disabled,
+  ...props
 }) => {
   return (
     <div className={wrapperStyle}>
@@ -55,7 +58,16 @@ const PeoplePicker: React.FC<PeoplePickerProps> = ({
         value={value}
         isOptionEqualToValue={(option, value) => option.email === value.email}
         onChange={onChange}
-        renderInput={(params) => <TextField className="bg-white" {...params} placeholder={placeholder} />}
+        renderInput={(params) => (
+          <TextField
+            {...params}
+            className={`${disabled} ? '!bg-gray-500' : 'bg-white`}
+            sx={{
+              backgroundColor: disabled ? '#dadada4a' : '',
+            }}
+            placeholder={placeholder}
+          />
+        )}
         renderTags={(value: Person[], getTagProps) =>
           value.map((option, index) => (
             <Chip
@@ -74,6 +86,8 @@ const PeoplePicker: React.FC<PeoplePickerProps> = ({
             <ListItemText primary={option.name} secondary={option.email} />
           </ListItem>
         )}
+        disabled={disabled}
+        {...props}
       />
     </div>
   );
