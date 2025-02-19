@@ -168,31 +168,6 @@ A **popup modal** with customizable content.
 
 ---
 
-### 6️⃣ **PeoplePicker**
-
-A **searchable contact picker** with avatar support.
-
-#### **Props**
-
-| Prop       | Type       | Default | Description                                |
-| ---------- | ---------- | ------- | ------------------------------------------ |
-| `options`  | `array`    | `[]`    | List of people `{id, name, email, avatar}` |
-| `value`    | `object`   | `null`  | Selected person object                     |
-| `onChange` | `function` | `-`     | Callback triggered on selection change     |
-
-#### **Example**
-
-```tsx
-<PeoplePicker
-  id="people-picker"
-  options={[{ id: 1, name: 'John Doe', email: 'john@example.com' }]}
-  value={null}
-  onChange={(event, value) => console.log(value)}
-/>
-```
-
----
-
 ### 7️⃣ **TabList**
 
 A **dynamic tab navigation** component.
@@ -219,8 +194,6 @@ A **dynamic tab navigation** component.
 ```
 
 ---
-
-## 🌟 **Components Overview**
 
 ### 6️⃣ **PeoplePicker**
 
