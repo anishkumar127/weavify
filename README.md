@@ -230,7 +230,7 @@ A **searchable contact picker** with avatar support, allowing users to select a 
   required
   isLabelRequired
 />
-
+```
 
 ---
 
