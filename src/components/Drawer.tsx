@@ -21,6 +21,9 @@ import { DismissRegular } from '@fluentui/react-icons';
 import { Drawer, IconButton, Typography } from '@mui/material';
 import * as React from 'react';
 
+type DrawerSizePreset = 'small' | 'medium' | 'large' | 'full';
+type DrawerSize = DrawerSizePreset | number;
+
 interface CustomDrawerProps {
   isOpen: boolean;
   onClose: () => void;
@@ -29,7 +32,7 @@ interface CustomDrawerProps {
   drawerStyles?: string; // React.CSSProperties
   drawerBodyStyles?: string;
   drawerHeaderStyles?: string;
-  size: 'small' | 'medium' | 'large' | 'full';
+  size: DrawerSize;
   type: 'temporary' | 'persistent' | 'permanent';
 }
 
@@ -52,6 +55,13 @@ const CustomDrawer: React.FC<CustomDrawerProps> = ({
     full: '100%',
   };
 
+  function getDrawerWidth(size: DrawerSize): string {
+    if (typeof size === 'number') {
+      return `${size}px`;
+    }
+    return drawerSizeMap[size];
+  }
+
   return (
     <Drawer
       className={drawerStyles}
@@ -61,11 +71,11 @@ const CustomDrawer: React.FC<CustomDrawerProps> = ({
       variant={type}
       {...props}
       sx={{
-        width: drawerSizeMap[size] || '300px',
+        width: getDrawerWidth(size) || '300px',
         height: '100%',
         flexShrink: 0,
         '& .MuiDrawer-paper': {
-          width: drawerSizeMap[size] || '300px',
+          width: getDrawerWidth(size) || '300px',
           // backgroundColor: '#929292',
           border: 'none',
           display: 'flex',
