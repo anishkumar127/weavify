@@ -201,22 +201,22 @@ A **searchable contact picker** with avatar support, allowing users to select a 
 
 #### **Props**
 
-| Prop              | Type                                       | Default               | Description                         |
-| ----------------- | ------------------------------------------ | --------------------- | ----------------------------------- | ----------------------------------------------- |
-| `options`         | `Person[]` (`{ id, name, email, avatar }`) | `[]`                  | List of selectable people           |
-| `value`           | `Person \| null`                           | `null`                | Selected person                     |
-| `onChange`        | `(event: SyntheticEvent, value: Person     | null) => void`        | `-`                                 | Callback function triggered on selection change |
-| `label`           | `string`                                   | `'Select People'`     | Label displayed above the input     |
-| `placeholder`     | `string`                                   | `'Type to search...'` | Placeholder text                    |
-| `required`        | `boolean`                                  | `false`               | Marks the field as required         |
-| `isLabelRequired` | `boolean`                                  | `false`               | Determines whether to show a label  |
-| `wrapperStyle`    | `string`                                   | `""`                  | Custom CSS class for the wrapper    |
-| `id`              | `string`                                   | `""`                  | Unique identifier for the component |
-| `disabled`        | `boolean`                                  | `false`               | Disables the input                  |
+| Prop              | Type                                                     | Default               | Description                                     |
+| ----------------- | -------------------------------------------------------- | --------------------- | ----------------------------------------------- |
+| `options`         | `Person[]` (`{ id, name, email, avatar }`)               | `[]`                  | List of selectable people                       |
+| `value`           | `Person \| null`                                         | `null`                | Selected person                                 |
+| `onChange`        | `(event: SyntheticEvent, value: Person \| null) => void` | `-`                   | Callback function triggered on selection change |
+| `label`           | `string`                                                 | `'Select People'`     | Label displayed above the input                 |
+| `placeholder`     | `string`                                                 | `'Type to search...'` | Placeholder text                                |
+| `required`        | `boolean`                                                | `false`               | Marks the field as required                     |
+| `isLabelRequired` | `boolean`                                                | `false`               | Determines whether to show a label              |
+| `wrapperStyle`    | `string`                                                 | `""`                  | Custom CSS class for the wrapper                |
+| `id`              | `string`                                                 | `""`                  | Unique identifier for the component             |
+| `disabled`        | `boolean`                                                | `false`               | Disables the input                              |
 
 #### **Example Usage**
 
-```tsx
+````tsx
 <PeoplePicker
   id="people-picker"
   options={[
@@ -230,7 +230,7 @@ A **searchable contact picker** with avatar support, allowing users to select a 
   required
   isLabelRequired
 />
-```
+
 
 ---
 
@@ -268,7 +268,7 @@ A **multi-select** component that allows users to pick multiple people from a li
   required
   isLabelRequired
 />
-```
+````
 
 ---
 
