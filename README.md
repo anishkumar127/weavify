@@ -220,6 +220,83 @@ A **dynamic tab navigation** component.
 
 ---
 
+### 6️⃣ **PeoplePicker**
+
+A **searchable contact picker** with avatar support, allowing users to select a single person.
+
+#### **Props**
+
+| Prop              | Type                                       | Default               | Description                         |
+| ----------------- | ------------------------------------------ | --------------------- | ----------------------------------- | ----------------------------------------------- |
+| `options`         | `Person[]` (`{ id, name, email, avatar }`) | `[]`                  | List of selectable people           |
+| `value`           | `Person \| null`                           | `null`                | Selected person                     |
+| `onChange`        | `(event: SyntheticEvent, value: Person     | null) => void`        | `-`                                 | Callback function triggered on selection change |
+| `label`           | `string`                                   | `'Select People'`     | Label displayed above the input     |
+| `placeholder`     | `string`                                   | `'Type to search...'` | Placeholder text                    |
+| `required`        | `boolean`                                  | `false`               | Marks the field as required         |
+| `isLabelRequired` | `boolean`                                  | `false`               | Determines whether to show a label  |
+| `wrapperStyle`    | `string`                                   | `""`                  | Custom CSS class for the wrapper    |
+| `id`              | `string`                                   | `""`                  | Unique identifier for the component |
+| `disabled`        | `boolean`                                  | `false`               | Disables the input                  |
+
+#### **Example Usage**
+
+```tsx
+<PeoplePicker
+  id="people-picker"
+  options={[
+    { id: 1, name: 'John Doe', email: 'john@example.com' },
+    { id: 2, name: 'Jane Smith', email: 'jane@example.com' },
+  ]}
+  value={null}
+  onChange={(event, value) => console.log(value)}
+  label="Select a Person"
+  placeholder="Search for a person"
+  required
+  isLabelRequired
+/>
+```
+
+---
+
+### 7️⃣ **GroupPeoplePicker**
+
+A **multi-select** component that allows users to pick multiple people from a list.
+
+#### **Props**
+
+| Prop              | Type                                               | Default               | Description                                     |
+| ----------------- | -------------------------------------------------- | --------------------- | ----------------------------------------------- |
+| `options`         | `Person[]` (`{ id, name, email, avatar }`)         | `[]`                  | List of selectable people                       |
+| `value`           | `Person[]`                                         | `[]`                  | Selected people                                 |
+| `onChange`        | `(event: SyntheticEvent, value: Person[]) => void` | `-`                   | Callback function triggered on selection change |
+| `label`           | `string`                                           | `'Select People'`     | Label displayed above the input                 |
+| `placeholder`     | `string`                                           | `'Type to search...'` | Placeholder text                                |
+| `required`        | `boolean`                                          | `false`               | Marks the field as required                     |
+| `isLabelRequired` | `boolean`                                          | `false`               | Determines whether to show a label              |
+| `wrapperStyle`    | `string`                                           | `""`                  | Custom CSS class for the wrapper                |
+| `id`              | `string`                                           | `""`                  | Unique identifier for the component             |
+
+#### **Example Usage**
+
+```tsx
+<GroupPeoplePicker
+  id="group-people-picker"
+  options={[
+    { id: 1, name: 'John Doe', email: 'john@example.com' },
+    { id: 2, name: 'Jane Smith', email: 'jane@example.com' },
+  ]}
+  value={[]}
+  onChange={(event, value) => console.log(value)}
+  label="Select People"
+  placeholder="Search for a person"
+  required
+  isLabelRequired
+/>
+```
+
+---
+
 ## 📚 **Contributing**
 
 We welcome contributions! Feel free to:
