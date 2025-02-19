@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.13.0](https://github.com/anishkumar127/anish-mui-custom-ui-components/compare/v1.12.3...v1.13.0) (2025-02-19)
+
+
+### Features
+
+* enhance CustomDrawer component to support dynamic sizes ([30db683](https://github.com/anishkumar127/anish-mui-custom-ui-components/commit/30db68341f4f4b58a0778b9799d9aeaae3ef3027))
+
 ### [1.12.3](https://github.com/anishkumar127/anish-mui-custom-ui-components/compare/v1.12.2...v1.12.3) (2025-02-19)
 
 ### [1.12.2](https://github.com/anishkumar127/anish-mui-custom-ui-components/compare/v1.12.1...v1.12.2) (2025-02-19)
