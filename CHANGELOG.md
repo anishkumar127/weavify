@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.11.0](https://github.com/anishkumar127/anish-mui-custom-ui-components/compare/v1.9.1...v1.11.0) (2025-02-19)
+
+
+### Features
+
+* add disabled prop to PeoplePicker component ([faa3b97](https://github.com/anishkumar127/anish-mui-custom-ui-components/commit/faa3b974822ae6261b4412524fb2e2f8c346c462))
+* add push script to package.json for streamlined release process ([e95b107](https://github.com/anishkumar127/anish-mui-custom-ui-components/commit/e95b1077468a405f07bc1e973360f794abd70a00))
+* readme updated ([d136b74](https://github.com/anishkumar127/anish-mui-custom-ui-components/commit/d136b747791e31d19d0090c4b561bb043f328559))
+* readme updated ([ba779eb](https://github.com/anishkumar127/anish-mui-custom-ui-components/commit/ba779eb51783471dcd246a348786b771b122acdb))
+
 ### [1.9.1](https://github.com/anishkumar127/anish-mui-custom-ui-components/compare/v1.9.0...v1.9.1) (2025-01-23)
 
 ## [1.9.0](https://github.com/anishkumar127/anish-mui-custom-ui-components/compare/v1.6.3...v1.9.0) (2025-01-23)
