@@ -12,7 +12,7 @@
     "format:fix": "prettier . --write",
     "prePublish": "npm run format:fix && npm run rollup && npm publish",
     "release": "standard-version && git push --follow-tags",
-    "push": "npm run format:fix && standard-version && npm run rollup && npm publish && git push --follow-tags"
+    "push": "npm run format:fix && standard-version && npm run rollup && git push --follow-tags origin main && npm publish"
   },
   "keywords": [
     "mui",

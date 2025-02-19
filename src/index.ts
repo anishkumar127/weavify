@@ -4,6 +4,7 @@ export { default as Avatar } from './components/Avatar';
 export { default as Button } from './components/Button';
 export { default as Drawer } from './components/Drawer';
 export { default as ChoiceDropdown } from './components/Dropdown';
+export { default as GroupPeoplePicker } from './components/GroupPeoplePicker';
 export { default as Label } from './components/InputLabel';
 export { default as Modal } from './components/Modal';
 export { default as OverflowSet } from './components/OverflowSet';
