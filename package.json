@@ -65,12 +65,13 @@
     "rollup-plugin-postcss": "^4.0.2",
     "standard-version": "^9.5.0",
     "tsconfig-paths": "^4.2.0",
-    "typescript": "^5.7.2"
-  },
-  "dependencies": {
+    "typescript": "^5.7.2",
     "autoprefixer": "^10.4.20",
     "postcss": "^8.4.49",
     "tslib": "^2.8.1"
+  },
+  "dependencies": {
+
   },
   "config": {
     "commitizen": {
