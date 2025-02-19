@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.12.0](https://github.com/anishkumar127/anish-mui-custom-ui-components/compare/v1.11.0...v1.12.0) (2025-02-19)
+
+
+### Features
+
+* add GroupPeoplePicker component for enhanced user selection ([91a086f](https://github.com/anishkumar127/anish-mui-custom-ui-components/commit/91a086fce91ea81abf3088b70e687ff3f5db3613))
+
 ## [1.11.0](https://github.com/anishkumar127/anish-mui-custom-ui-components/compare/v1.9.1...v1.11.0) (2025-02-19)
 
 
