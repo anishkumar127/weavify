@@ -1,6 +1,6 @@
 {
   "name": "weavify",
-  "version": "1.12.2",
+  "version": "1.12.3",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
   "types": "dist/index.d.ts",
@@ -70,9 +70,7 @@
     "postcss": "^8.4.49",
     "tslib": "^2.8.1"
   },
-  "dependencies": {
-
-  },
+  "dependencies": {},
   "config": {
     "commitizen": {
       "path": "cz-conventional-changelog"
