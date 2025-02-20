@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.13.4](https://github.com/anishkumar127/anish-mui-custom-ui-components/compare/v1.13.3...v1.13.4) (2025-02-20)
+
+
+### Bug Fixes
+
+* improve TextField styling in Dropdown component based on disabled state ([4031b84](https://github.com/anishkumar127/anish-mui-custom-ui-components/commit/4031b8465cdd9fbca8c1be343059683274fbc7e9))
+* update release script to push to origin main explicitly ([15d4d9a](https://github.com/anishkumar127/anish-mui-custom-ui-components/commit/15d4d9af43bf58575cb74432c9eb619134c42119))
+
 ### [1.13.3](https://github.com/anishkumar127/anish-mui-custom-ui-components/compare/v1.13.2...v1.13.3) (2025-02-20)
 
 ### [1.13.2](https://github.com/anishkumar127/anish-mui-custom-ui-components/compare/v1.13.1...v1.13.2) (2025-02-20)
