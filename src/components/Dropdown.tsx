@@ -73,7 +73,16 @@ function Dropdown<T>({
         size={size}
         id={id}
         value={value}
-        renderInput={(params) => <TextField className="bg-white" {...params} placeholder={placeholder} />}
+        renderInput={(params) => (
+          <TextField
+            {...params}
+            placeholder={placeholder}
+            className={`${disabled} ? '!bg-gray-500' : 'bg-white`}
+            sx={{
+              backgroundColor: disabled ? '#dadada4a' : '',
+            }}
+          />
+        )}
         disabled={disabled}
         {...props}
       />
