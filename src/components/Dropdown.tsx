@@ -79,7 +79,7 @@ function Dropdown<T>({
             placeholder={placeholder}
             className={`${disabled} ? '!bg-gray-500' : 'bg-white`}
             sx={{
-              backgroundColor: disabled ? '#dadada4a' : '',
+              backgroundColor: disabled ? '#dadada4a' : '#fff',
             }}
           />
         )}
