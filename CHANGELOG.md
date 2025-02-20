@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.13.7](https://github.com/anishkumar127/anish-mui-custom-ui-components/compare/v1.13.6...v1.13.7) (2025-02-20)
+
+
+### Bug Fixes
+
+* add disabled prop to CustomAutocomplete component ([fce1fa3](https://github.com/anishkumar127/anish-mui-custom-ui-components/commit/fce1fa389fddff85b7aa447632e04d73de500ebc))
+* reorder and consolidate exports in index.ts for better organization ([eb5b7f1](https://github.com/anishkumar127/anish-mui-custom-ui-components/commit/eb5b7f1bbbc8f54c3fb3f72022519122bfee0e4d))
+
 ### [1.13.6](https://github.com/anishkumar127/anish-mui-custom-ui-components/compare/v1.13.4...v1.13.6) (2025-02-20)
 
 
