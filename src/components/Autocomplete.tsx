@@ -15,6 +15,7 @@ interface AutocompleteProps<T> {
   value: any; // ! fix later
   //   onChange: (event: SyntheticEvent<Element, Event>, value: string) => void;
   onChange: any; // ! fix later
+  disabled?: boolean;
 }
 
 function CustomAutocomplete<T>({
@@ -30,6 +31,8 @@ function CustomAutocomplete<T>({
   wrapperStyle,
   required = false,
   value,
+  disabled = false,
+  ...props
 }: AutocompleteProps<T>) {
   return (
     <div className={wrapperStyle}>
@@ -48,7 +51,17 @@ function CustomAutocomplete<T>({
         size={size}
         id={id}
         value={value}
-        renderInput={(params) => <TextField className="bg-white" {...params} placeholder={placeholder} />}
+        renderInput={(params) => (
+          <TextField
+            {...params}
+            placeholder={placeholder}
+            className={`${disabled} ? '!bg-gray-500' : 'bg-white`}
+            sx={{
+              backgroundColor: disabled ? '#dadada4a' : '',
+            }}
+          />
+        )}
+        {...props}
       />
     </div>
   );

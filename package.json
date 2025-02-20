@@ -1,6 +1,6 @@
 {
   "name": "weavify",
-  "version": "1.13.4",
+  "version": "1.13.5",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
   "types": "dist/index.d.ts",
@@ -10,7 +10,7 @@
     "commit": "cz",
     "format:check": "prettier . --check",
     "format:fix": "prettier . --write",
-    "prePublish": "npm run format:fix && npm run rollup && npm publish",
+    "prePublish": "rm -rf dist && npm run rollup && npm publish",
     "release": "standard-version && git push --follow-tags origin main",
     "push": "npm run format:fix && standard-version && npm run rollup && git push --follow-tags origin main && npm publish"
   },
