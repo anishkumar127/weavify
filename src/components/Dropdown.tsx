@@ -1,6 +1,6 @@
 import { Autocomplete, InputLabel, TextField } from '@mui/material';
 
-interface ChoiceDropdownProps<T> {
+interface DropdownProps<T> {
   options: T[];
   label: string;
   sx?: object;
@@ -13,6 +13,7 @@ interface ChoiceDropdownProps<T> {
   required?: boolean;
   value: T[]; // Adjusted for multi-select
   onChange: (event: any, value: T[]) => void; // Adjusted for multi-select
+  disabled?: boolean;
 }
 
 /**
@@ -39,7 +40,7 @@ interface ChoiceDropdownProps<T> {
  * @param {boolean} [required=false] - If true, marks the input as required.
  */
 
-function ChoiceDropdown<T>({
+function Dropdown<T>({
   id,
   options,
   label,
@@ -52,7 +53,9 @@ function ChoiceDropdown<T>({
   wrapperStyle,
   required = false,
   value,
-}: ChoiceDropdownProps<T>) {
+  disabled,
+  ...props
+}: DropdownProps<T>) {
   return (
     <div className={wrapperStyle}>
       {isLabelRequired && (
@@ -71,9 +74,11 @@ function ChoiceDropdown<T>({
         id={id}
         value={value}
         renderInput={(params) => <TextField className="bg-white" {...params} placeholder={placeholder} />}
+        disabled={disabled}
+        {...props}
       />
     </div>
   );
 }
 
-export default ChoiceDropdown;
+export default Dropdown;
