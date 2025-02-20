@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.13.8](https://github.com/anishkumar127/anish-mui-custom-ui-components/compare/v1.13.7...v1.13.8) (2025-02-20)
+
+
+### Bug Fixes
+
+* update background color for disabled state in Autocomplete, Dropdown, and PeoplePicker components ([e48ea6e](https://github.com/anishkumar127/anish-mui-custom-ui-components/commit/e48ea6ecfdc5bde0cdf0523689f222f829e11fd3))
+
 ### [1.13.7](https://github.com/anishkumar127/anish-mui-custom-ui-components/compare/v1.13.6...v1.13.7) (2025-02-20)
 
 
