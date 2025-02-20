@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.13.6](https://github.com/anishkumar127/anish-mui-custom-ui-components/compare/v1.13.4...v1.13.6) (2025-02-20)
+
+
+### Bug Fixes
+
+* update version to 1.13.5 and enhance Autocomplete component to support disabled state ([43b4b67](https://github.com/anishkumar127/anish-mui-custom-ui-components/commit/43b4b67eb55dd0bfeb996a981eaa4508638d5ece))
+
 ### [1.13.4](https://github.com/anishkumar127/anish-mui-custom-ui-components/compare/v1.13.3...v1.13.4) (2025-02-20)
 
 
