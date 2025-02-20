@@ -61,6 +61,7 @@ function CustomAutocomplete<T>({
             }}
           />
         )}
+        disabled={disabled}
         {...props}
       />
     </div>
