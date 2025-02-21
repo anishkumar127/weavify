@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.13.9](https://github.com/anishkumar127/anish-mui-custom-ui-components/compare/v1.13.8...v1.13.9) (2025-02-21)
+
+
+### Bug Fixes
+
+* add disabled prop and update background color in GroupPeoplePicker component ([1d315d1](https://github.com/anishkumar127/anish-mui-custom-ui-components/commit/1d315d10129c49305d917a1360aceb09edf79a54))
+
 ### [1.13.8](https://github.com/anishkumar127/anish-mui-custom-ui-components/compare/v1.13.7...v1.13.8) (2025-02-20)
 
 
