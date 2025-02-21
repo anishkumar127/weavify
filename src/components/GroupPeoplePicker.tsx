@@ -27,6 +27,7 @@ interface GroupPeoplePickerProps {
   isLabelRequired?: boolean;
   wrapperStyle?: string;
   id: string;
+  disabled?: boolean;
 }
 
 const GroupPeoplePicker: React.FC<GroupPeoplePickerProps> = ({
@@ -39,6 +40,8 @@ const GroupPeoplePicker: React.FC<GroupPeoplePickerProps> = ({
   isLabelRequired = false,
   wrapperStyle,
   id,
+  disabled,
+  ...props
 }) => {
   return (
     <div className={`${wrapperStyle}`}>
@@ -58,7 +61,6 @@ const GroupPeoplePicker: React.FC<GroupPeoplePickerProps> = ({
         onChange={onChange}
         renderInput={(params) => (
           <TextField
-            className="bg-white"
             {...params}
             placeholder={placeholder}
             sx={{
@@ -66,8 +68,10 @@ const GroupPeoplePicker: React.FC<GroupPeoplePickerProps> = ({
               '& .MuiOutlinedInput-root': {
                 height: 'auto',
               },
+              backgroundColor: disabled ? '#dadada4a' : '#fff',
             }}
             size="small"
+            className={`${disabled} ? '!bg-gray-500' : 'bg-white`}
           />
         )}
         renderTags={(selected: Person[], getTagProps) =>
@@ -88,6 +92,8 @@ const GroupPeoplePicker: React.FC<GroupPeoplePickerProps> = ({
             <ListItemText primary={option.name} secondary={option.email} />
           </ListItem>
         )}
+        disabled={disabled}
+        {...props}
       />
     </div>
   );
