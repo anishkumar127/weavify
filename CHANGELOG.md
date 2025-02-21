@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.13.10](https://github.com/anishkumar127/anish-mui-custom-ui-components/compare/v1.13.9...v1.13.10) (2025-02-21)
+
+
+### Bug Fixes
+
+* update rollup configuration to include Tailwind CSS and autoprefixer for improved styling ([6914e6e](https://github.com/anishkumar127/anish-mui-custom-ui-components/commit/6914e6e57ca82171b1d66458dcc6732243883de9))
+
 ### [1.13.9](https://github.com/anishkumar127/anish-mui-custom-ui-components/compare/v1.13.8...v1.13.9) (2025-02-21)
 
 
