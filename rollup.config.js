@@ -1,11 +1,12 @@
-import resolve from '@rollup/plugin-node-resolve';
 import commonjs from '@rollup/plugin-commonjs';
-import typescript from '@rollup/plugin-typescript';
-import dts from 'rollup-plugin-dts';
+import resolve from '@rollup/plugin-node-resolve';
 import terser from '@rollup/plugin-terser';
+import typescript from '@rollup/plugin-typescript';
+import autoprefixer from 'autoprefixer';
+import dts from 'rollup-plugin-dts';
 import peerDepsExternal from 'rollup-plugin-peer-deps-external';
-
 import postcss from 'rollup-plugin-postcss';
+import tailwindcss from 'tailwindcss';
 
 const packageJson = require('./package.json');
 
@@ -30,7 +31,14 @@ export default [
       commonjs(),
       typescript({ tsconfig: './tsconfig.json' }),
       terser(),
-      postcss(),
+      postcss({
+        extract: true, // Extract CSS into a separate file
+        minimize: true, // Minify CSS
+        plugins: [
+          tailwindcss(), // Make sure you've installed tailwindcss
+          autoprefixer(), // ...and autoprefixer
+        ],
+      }),
       // postcss({
       // extract: true, // Extract CSS into a separate file
       // minimize: true, // Minify CSS

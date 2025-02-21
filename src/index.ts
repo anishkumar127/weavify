@@ -1,4 +1,4 @@
-// import './index.css';
+import './index.css';
 export { default as Dropdown } from './components/Autocomplete';
 export { default as ChoiceDropdown } from './components/Dropdown';
 export { default as Select } from './components/Select';
