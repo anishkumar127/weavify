@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.13.11](https://github.com/anishkumar127/anish-mui-custom-ui-components/compare/v1.13.10...v1.13.11) (2025-02-21)
+
+
+### Bug Fixes
+
+* update package dependencies and add todo documentation ([57da439](https://github.com/anishkumar127/anish-mui-custom-ui-components/commit/57da4392ad9a37e3b31b6c9fb88c189d61b2a9e2))
+
 ### [1.13.10](https://github.com/anishkumar127/anish-mui-custom-ui-components/compare/v1.13.9...v1.13.10) (2025-02-21)
 
 
