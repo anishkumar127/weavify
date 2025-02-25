@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.14.1](https://github.com/anishkumar127/anish-mui-custom-ui-components/compare/v1.14.0...v1.14.1) (2025-02-25)
+
+
+### Bug Fixes
+
+* rename CustomRadioButtonGroup to RadioButtonGroup and add disabled prop ([3940b6a](https://github.com/anishkumar127/anish-mui-custom-ui-components/commit/3940b6a1fe89223c0618ec36877c7cb8675aa884))
+
 ## [1.14.0](https://github.com/anishkumar127/anish-mui-custom-ui-components/compare/v1.13.11...v1.14.0) (2025-02-25)
 
 
