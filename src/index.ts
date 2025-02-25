@@ -25,6 +25,8 @@ export { default as Tooltip } from './components/Tooltip';
 // hooks
 
 export { Alerts } from './hooks/Alerts';
+export { ConfirmAlerts } from './hooks/ConfirmAlerts';
+
 // weavify
 
 // windly
