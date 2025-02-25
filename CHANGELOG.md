@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.15.0](https://github.com/anishkumar127/anish-mui-custom-ui-components/compare/v1.14.1...v1.15.0) (2025-02-25)
+
+
+### Features
+
+* add ConfirmAlerts component for enhanced alert confirmation functionality ([da072d1](https://github.com/anishkumar127/anish-mui-custom-ui-components/commit/da072d1cda47057bd96930ea8db651d47cb590ba))
+
 ### [1.14.1](https://github.com/anishkumar127/anish-mui-custom-ui-components/compare/v1.14.0...v1.14.1) (2025-02-25)
 
 
