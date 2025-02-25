@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.14.0](https://github.com/anishkumar127/anish-mui-custom-ui-components/compare/v1.13.11...v1.14.0) (2025-02-25)
+
+
+### Features
+
+* add Alerts hook with SweetAlert2 integration and update package.json dependencies ([c199760](https://github.com/anishkumar127/anish-mui-custom-ui-components/commit/c199760ac912d6bcdb6a074d758573e7288be209))
+
 ### [1.13.11](https://github.com/anishkumar127/anish-mui-custom-ui-components/compare/v1.13.10...v1.13.11) (2025-02-21)
 
 

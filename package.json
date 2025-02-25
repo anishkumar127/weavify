@@ -1,6 +1,6 @@
 {
   "name": "weavify",
-  "version": "1.13.11",
+  "version": "1.14.0",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
   "types": "dist/index.d.ts",
@@ -76,6 +76,5 @@
       "path": "cz-conventional-changelog"
     }
   },
-  "dependencies": {
-  }
+  "dependencies": {}
 }
