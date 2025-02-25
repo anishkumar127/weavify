@@ -1,5 +1,5 @@
 /**
- * CustomRadioButtonGroup Component
+ * RadioButtonGroup Component
  *
  * A reusable radio button group component that allows users to select from a set of options.
  * It supports custom alignment, label display, and required fields for form validation.
@@ -41,9 +41,10 @@ interface RadioButtonGroupProps {
   id: string;
   wrapperStyle?: string;
   radioStyle?: string;
+  disabled?: boolean;
 }
 
-const CustomRadioButtonGroup: React.FC<RadioButtonGroupProps> = ({
+const RadioButtonGroup: React.FC<RadioButtonGroupProps> = ({
   id,
   label,
   name,
@@ -56,6 +57,7 @@ const CustomRadioButtonGroup: React.FC<RadioButtonGroupProps> = ({
   isLabelRequired = false,
   wrapperStyle,
   radioStyle,
+  disabled,
   ...props
 }) => {
   return (
@@ -82,6 +84,7 @@ const CustomRadioButtonGroup: React.FC<RadioButtonGroupProps> = ({
             value={option.value}
             control={<Radio className={radioStyle} />}
             label={option.label}
+            disabled={disabled}
           />
         ))}
       </RadioGroup>
@@ -89,4 +92,4 @@ const CustomRadioButtonGroup: React.FC<RadioButtonGroupProps> = ({
   );
 };
 
-export default React.memo(CustomRadioButtonGroup);
+export default React.memo(RadioButtonGroup);
