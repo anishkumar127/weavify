@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.16.0](https://github.com/anishkumar127/anish-mui-custom-ui-components/compare/v1.15.0...v1.16.0) (2025-02-26)
+
+
+### Features
+
+* add CustomMenu component for enhanced menu functionality ([066eef7](https://github.com/anishkumar127/anish-mui-custom-ui-components/commit/066eef744169c01d4800ceb9d55c5f4e6a95fa6b))
+
 ## [1.15.0](https://github.com/anishkumar127/anish-mui-custom-ui-components/compare/v1.14.1...v1.15.0) (2025-02-25)
 
 
