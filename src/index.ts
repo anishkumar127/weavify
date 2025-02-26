@@ -7,6 +7,7 @@ export { default as GroupPeoplePicker } from './components/GroupPeoplePicker';
 export { default as PeoplePicker } from './components/PeoplePicker';
 
 export { default as Drawer } from './components/Drawer';
+export { default as Menu, MenuPropsType } from './components/Menu';
 export { default as Modal } from './components/Modal';
 export { default as OverflowSet } from './components/OverflowSet';
 export { default as OverflowSetV2 } from './components/OverflowSetV2';
