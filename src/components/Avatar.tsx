@@ -1,5 +1,5 @@
 /**
- * Avatar Component
+ * CustomAvatar Component
  *
  * A reusable and customizable avatar component based on Material-UI's Avatar.
  * It supports various sizes, image sources, text fallbacks, and customizable styles.
