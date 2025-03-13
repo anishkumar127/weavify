@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.16.1](https://github.com/anishkumar127/weavify/compare/v1.16.0...v1.16.1) (2025-03-13)
+
+
+### Bug Fixes
+
+* update target ID handling in ConfirmAlerts component ([3339fec](https://github.com/anishkumar127/weavify/commit/3339fec9ab7b2985ac0b86a3cda82d45b8ef9cef))
+
 ## [1.16.0](https://github.com/anishkumar127/anish-mui-custom-ui-components/compare/v1.15.0...v1.16.0) (2025-02-26)
 
 
