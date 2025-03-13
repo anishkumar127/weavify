@@ -31,7 +31,7 @@ const TabList = ({ selectedPivot, setSelectedPivot, pivotCount, tabs }: TabListP
           label={
             <span className="flex items-center gap-2">
               <span className="text-sm leading-none">{label}</span>
-              {pivotCount[key] > 0 ? <span className="text-xl font-bold leading-none">{pivotCount[key]}</span> : ''}
+              {pivotCount[key] > 0 ? <span className="text-xl leading-none font-bold">{pivotCount[key]}</span> : ''}
             </span>
           }
           onClick={() => setSelectedPivot(key)}
