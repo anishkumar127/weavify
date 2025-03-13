@@ -59,7 +59,7 @@ export const ConfirmAlerts: React.FC<ConfirmAlertProps> = ({
         title: title !== 'Skip' ? title : '',
         icon: type,
         text,
-        target: id,
+        target: id?.startsWith('#') ? id : '#anish',
         customClass: {
           popup: popupCustomClass,
           title: 'sweet-custom-title-class',
