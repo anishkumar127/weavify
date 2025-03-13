@@ -57,7 +57,7 @@ function CustomAutocomplete<T>({
           <TextField
             {...params}
             placeholder={placeholder}
-            className={`${disabled} ? '!bg-gray-500' : 'bg-white`}
+            className={disabled ? '!bg-gray-500' : 'bg-white'}
             sx={{
               backgroundColor: disabled ? '#dadada4a' : '#fff',
             }}

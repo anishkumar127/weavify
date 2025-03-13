@@ -270,6 +270,12 @@ A **multi-select** component that allows users to pick multiple people from a li
 />
 ```
 
+# Switch
+
+```tsx
+<CustomSwitch id={key} checked={Boolean(isEnable)} onChange={(e) => handleChange(e, key)} />
+```
+
 ---
 
 ## 📚 **Contributing**
