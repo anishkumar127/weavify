@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.16.3](https://github.com/anishkumar127/weavify/compare/v1.16.2...v1.16.3) (2025-03-13)
+
+
+### Bug Fixes
+
+* add save button to CustomDrawer component with onSave prop ([ed7b5d7](https://github.com/anishkumar127/weavify/commit/ed7b5d7b9b2322191df5f775eac67f0bcaa821bd))
+* enhance ReusableModal component with sx prop and accessibility improvements ([2ded07b](https://github.com/anishkumar127/weavify/commit/2ded07b6075f7ce71adf969e2e14065046ed5d5e))
+* rename Avatar component to CustomAvatar for clarity ([2b2ad0e](https://github.com/anishkumar127/weavify/commit/2b2ad0ec4689b8eec559d6175e889335494a4fd0))
+* reorder import statements in InputLabel component for consistency ([3e6a169](https://github.com/anishkumar127/weavify/commit/3e6a16981fc093fd440bb32e9f5d70dde888b98e))
+* update component prop types and improve ESLint configuration ([60a833a](https://github.com/anishkumar127/weavify/commit/60a833abd6c60717ea8cf2a6189b18c4a34079e9))
+* update eslint and typescript dependencies in package.json ([a921561](https://github.com/anishkumar127/weavify/commit/a92156165e93235b50f458e9ad0641172c55c8e0))
+* update peer dependencies and improve TabList component styling ([f8257a6](https://github.com/anishkumar127/weavify/commit/f8257a6e770c480e87fe66b83705d5c2dbd656d4))
+
 ### [1.16.2](https://github.com/anishkumar127/weavify/compare/v1.16.1...v1.16.2) (2025-03-13)
 
 
