@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.16.2](https://github.com/anishkumar127/weavify/compare/v1.16.1...v1.16.2) (2025-03-13)
+
+
+### Bug Fixes
+
+* update tailwindcss version and adjust TabList component styling ([94bf071](https://github.com/anishkumar127/weavify/commit/94bf071855e9d183467cc6ce1927408db2d6ae5e))
+
 ### [1.16.1](https://github.com/anishkumar127/weavify/compare/v1.16.0...v1.16.1) (2025-03-13)
 
 
