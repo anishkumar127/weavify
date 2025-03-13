@@ -33,14 +33,14 @@
   "license": "ISC",
   "description": "",
   "peerDependencies": {
-    "@emotion/react": "^11.0.0",
-    "@emotion/styled": "^11.0.0",
-    "@fluentui/react-icons": "^2.0.0",
-    "@mui/material": "^5.0.0 || ^6.0.0",
-    "react": "^17.0.0 || ^18.3.1",
-    "react-dom": "^17.0.0 || ^18.3.1",
-    "tailwindcss": "^3.0.0",
-    "sweetalert2": "^11.17.2"
+    "@emotion/react": "^11.14.0",
+   "@emotion/styled": "^11.14.0",
+   "@fluentui/react-icons": "^2.0.271",
+    "@mui/material": "^6.4.1",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "tailwindcss": "^3.4.17",
+    "sweetalert2": "^11.15.10"
   },
   "devDependencies": {
     "@rollup/plugin-commonjs": "^28.0.2",
@@ -59,7 +59,7 @@
     "eslint-plugin-react": "^7.37.2",
     "eslint-plugin-react-hooks": "^5.1.0",
     "eslint-plugin-unused-imports": "^4.1.4",
-    "postcss": "^8.4.49",
+   "postcss": "^8.5.1",
     "prettier": "^3.4.2",
     "prettier-plugin-tailwindcss": "^0.6.9",
     "rollup": "^4.29.1",
