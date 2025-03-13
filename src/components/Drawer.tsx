@@ -29,7 +29,8 @@ interface CustomDrawerProps {
   onClose: () => void;
   headerTitle: string;
   bodyContent: React.ReactNode;
-  drawerStyles?: string; // React.CSSProperties
+  // React.CSSProperties
+  drawerStyles?: string;
   drawerBodyStyles?: string;
   drawerHeaderStyles?: string;
   size: DrawerSize;

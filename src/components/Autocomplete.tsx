@@ -12,9 +12,11 @@ interface AutocompleteProps<T> {
   isLabelRequired?: boolean;
   wrapperStyle?: string;
   required?: boolean;
-  value: any; // ! fix later
+  // ! fix later
+  value: any;
   //   onChange: (event: SyntheticEvent<Element, Event>, value: string) => void;
-  onChange: any; // ! fix later
+  // ! fix later
+  onChange: any;
   disabled?: boolean;
 }
 

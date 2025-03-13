@@ -11,8 +11,10 @@ interface DropdownProps<T> {
   isLabelRequired?: boolean;
   wrapperStyle?: string;
   required?: boolean;
-  value: T[]; // Adjusted for multi-select
-  onChange: (event: any, value: T[]) => void; // Adjusted for multi-select
+  // Adjusted for multi-select
+  value: T[];
+  // Adjusted for multi-select
+  onChange: (event: any, value: T[]) => void;
   disabled?: boolean;
 }
 

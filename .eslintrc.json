@@ -1,5 +1,6 @@
 {
   // "extends": ["next/core-web-vitals", "next/typescript"],
+  // "extends": ["eslint:recommended", "plugin:react/recommended", "plugin:@typescript-eslint/recommended"],
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
     "ecmaVersion": 2024, // 2020
@@ -8,7 +9,7 @@
       "jsx": true
     }
   },
-  "plugins": ["react", "unused-imports", "@typescript-eslint"],
+  "plugins": ["react", "unused-imports", "@typescript-eslint", "react-hooks", "@typescript-eslint"],
   "env": {
     "browser": true,
     "node": true,
