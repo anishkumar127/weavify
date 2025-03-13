@@ -17,7 +17,7 @@
  * @param {'small' | 'medium' | 'large' | 'full'} size - Defines the size of the drawer. Can be 'small', 'medium', 'large', or 'full'.
  * @param {'temporary' | 'persistent' | 'permanent'} type - Defines the type of the drawer. Can be 'temporary', 'persistent', or 'permanent'.
  */
-import { DismissRegular } from '@fluentui/react-icons';
+import { DismissRegular, SaveRegular } from '@fluentui/react-icons';
 import { Drawer, IconButton, Typography } from '@mui/material';
 import * as React from 'react';
 
@@ -26,10 +26,11 @@ type DrawerSize = DrawerSizePreset | number;
 
 interface CustomDrawerProps {
   isOpen: boolean;
+  isSave?: boolean;
+  onSave?: () => void;
   onClose: () => void;
   headerTitle: string;
   bodyContent: React.ReactNode;
-  // React.CSSProperties
   drawerStyles?: string;
   drawerBodyStyles?: string;
   drawerHeaderStyles?: string;
@@ -47,6 +48,8 @@ const CustomDrawer: React.FC<CustomDrawerProps> = ({
   drawerHeaderStyles,
   size,
   type,
+  isSave = false,
+  onSave,
   ...props
 }) => {
   const drawerSizeMap: Record<string, string> = {
@@ -88,9 +91,19 @@ const CustomDrawer: React.FC<CustomDrawerProps> = ({
         <Typography variant="h6" sx={{ fontSize: '16px' }} className="!text-white">
           {headerTitle}
         </Typography>
-        <IconButton sx={{ color: 'white' }} onClick={onClose} aria-label="close">
-          <DismissRegular />
-        </IconButton>
+
+        <div>
+          {isSave ? (
+            <IconButton sx={{ color: 'white' }} onClick={onSave} aria-label="close">
+              <SaveRegular />
+            </IconButton>
+          ) : (
+            ''
+          )}
+          <IconButton sx={{ color: 'white' }} onClick={onClose} aria-label="close">
+            <DismissRegular />
+          </IconButton>
+        </div>
       </div>
       <div className={drawerBodyStyles}>{bodyContent}</div>
     </Drawer>
