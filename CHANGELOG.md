@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.17.0](https://github.com/anishkumar127/weavify/compare/v1.16.3...v1.17.0) (2025-03-13)
+
+
+### Features
+
+* add CustomSwitch component with styled customization options ([e579d8a](https://github.com/anishkumar127/weavify/commit/e579d8a5fec97eba0f3c60f0fa633dd7507edca6))
+
 ### [1.16.3](https://github.com/anishkumar127/weavify/compare/v1.16.2...v1.16.3) (2025-03-13)
 
 
