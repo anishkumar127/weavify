@@ -5,7 +5,7 @@
   "module": "dist/index.mjs",
   "types": "dist/index.d.ts",
   "scripts": {
-    "clean": "rimraf dist",
+    "clean": "rm -rf dist",
     "build:types": "tsc --emitDeclarationOnly --declaration",
     "rollup": "npm run clean && npm run build:types && rollup -c --bundleConfigAsCjs",
     "test": "echo \"Error: no test specified\" && exit 1",
