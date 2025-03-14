@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.17.4](https://github.com/anishkumar127/weavify/compare/v1.17.3...v1.17.4) (2025-03-14)
+
+
+### Bug Fixes
+
+* update CustomSwitch component type definition for better type safety ([5e68a21](https://github.com/anishkumar127/weavify/commit/5e68a213fa0cc45b4af27304181e6b3eca9e31c7))
+
 ### [1.17.3](https://github.com/anishkumar127/weavify/compare/v1.17.2...v1.17.3) (2025-03-14)
 
 ### [1.17.2](https://github.com/anishkumar127/weavify/compare/v1.17.1...v1.17.2) (2025-03-14)
