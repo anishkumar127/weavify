@@ -12,7 +12,8 @@
     "format:fix": "prettier . --write",
     "prePublish": "rm -rf dist && npm run rollup && npm publish",
     "release": "standard-version && git push --follow-tags origin main",
-    "push": "npm run format:fix && standard-version && npm run rollup && git push --follow-tags origin main && npm publish"
+    "push": "npm run format:fix && standard-version && npm run rollup && git push --follow-tags origin main && npm publish",
+    "semantic-release": "semantic-release"
   },
   "keywords": [
     "mui",
@@ -39,34 +40,40 @@
     "@mui/material": "^6.4.7",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
-    "tailwindcss": "^3.4.17",
-    "sweetalert2": "^11.15.10"
+    "sweetalert2": "^11.15.10",
+    "tailwindcss": "^3.4.17"
   },
   "devDependencies": {
     "@rollup/plugin-commonjs": "^28.0.2",
     "@rollup/plugin-node-resolve": "^16.0.0",
     "@rollup/plugin-terser": "^0.4.4",
     "@rollup/plugin-typescript": "^12.1.2",
+    "@semantic-release/changelog": "^6.0.3",
+    "@semantic-release/commit-analyzer": "^13.0.1",
+    "@semantic-release/git": "^10.0.1",
+    "@semantic-release/npm": "^12.0.1",
+    "@semantic-release/release-notes-generator": "^14.0.3",
     "@types/react": "^18.3.17",
     "@types/react-dom": "^18.3.5",
+    "@typescript-eslint/eslint-plugin": "^8.22.0",
+    "@typescript-eslint/parser": "^8.22.0",
     "autoprefixer": "^10.4.20",
     "commitizen": "^4.3.1",
     "cz-conventional-changelog": "^3.3.0",
     "eslint": "^8.57.1",
     "eslint-config-next": "14.2.19",
+    "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-react": "^7.37.4",
     "eslint-plugin-react-hooks": "^5.1.0",
     "eslint-plugin-unused-imports": "^4.1.4",
-    "eslint-config-prettier": "^9.1.0",
     "postcss": "^8.5.1",
     "prettier": "^3.4.2",
-    "@typescript-eslint/eslint-plugin": "^8.22.0",
-    "@typescript-eslint/parser": "^8.22.0",
     "prettier-plugin-tailwindcss": "^0.6.9",
     "rollup": "^4.29.1",
     "rollup-plugin-dts": "^6.1.1",
     "rollup-plugin-peer-deps-external": "^2.2.4",
     "rollup-plugin-postcss": "^4.0.2",
+    "semantic-release": "^24.2.3",
     "standard-version": "^9.5.0",
     "tsconfig-paths": "^4.2.0",
     "tslib": "^2.8.1",
@@ -77,5 +84,11 @@
       "path": "cz-conventional-changelog"
     }
   },
-  "dependencies": {}
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "publishConfig": {
+    "access": "public"
+  }
 }
