@@ -35,8 +35,8 @@ jobs:
         run: pnpm run rollup
 
       #for testing
-      - name: Debug NPM Token
-        run: echo "NPM_TOKEN=${{ secrets.NPM_TOKEN }}"
+      # - name: Debug NPM Token
+      #   run: echo "NPM_TOKEN=${{ secrets.NPM_TOKEN }}"
 
       - name: Release
         env:
