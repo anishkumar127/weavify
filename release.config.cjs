@@ -9,7 +9,13 @@ module.exports = {
         changelogFile: 'CHANGELOG.md',
       },
     ],
-    '@semantic-release/npm',
+    [
+      '@semantic-release/npm',
+      {
+        npmPublish: true,
+        access: 'public',
+      },
+    ],
     [
       '@semantic-release/git',
       {
