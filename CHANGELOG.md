@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.17.8](https://github.com/anishkumar127/weavify/compare/v1.17.7...v1.17.8) (2025-03-14)
+
+
+### Bug Fixes
+
+* update GITHUB_TOKEN reference in release workflow ([2136680](https://github.com/anishkumar127/weavify/commit/2136680c03a9b75092900efaeef112d1e9af0398))
+
 ### [1.17.7](https://github.com/anishkumar127/weavify/compare/v1.17.6...v1.17.7) (2025-03-14)
 
 
