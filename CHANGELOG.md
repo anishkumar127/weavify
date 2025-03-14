@@ -1,3 +1,11 @@
+## [1.17.9](https://github.com/anishkumar127/weavify/compare/v1.17.8...v1.17.9) (2025-03-14)
+
+
+### Bug Fixes
+
+* comment out debug step for NPM token in release workflow ([26141e1](https://github.com/anishkumar127/weavify/commit/26141e1b18c469761d264311a3b7d0743bf51840))
+* enable debug mode for semantic-release in release workflow ([5662542](https://github.com/anishkumar127/weavify/commit/5662542902dedc70d2e62757b0b2938c7b2b9506))
+
 # Changelog
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
