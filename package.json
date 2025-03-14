@@ -1,21 +1,21 @@
 {
   "name": "weavify",
-  "version": "1.17.0",
+  "version": "1.17.1",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
   "types": "dist/index.d.ts",
   "scripts": {
-  "clean": "rimraf dist",
-  "build:types": "tsc --emitDeclarationOnly --declaration",
-  "rollup": "npm run clean && npm run build:types && rollup -c --bundleConfigAsCjs",
+    "clean": "rimraf dist",
+    "build:types": "tsc --emitDeclarationOnly --declaration",
+    "rollup": "npm run clean && npm run build:types && rollup -c --bundleConfigAsCjs",
     "test": "echo \"Error: no test specified\" && exit 1",
     "commit": "cz",
     "format:check": "prettier . --check",
     "format:fix": "prettier . --write",
     "prePublish": "rm -rf dist && npm run rollup && npm publish",
     "release": "standard-version && git push --follow-tags origin main",
-    "push": "npm run format:fix && standard-version && npm run rollup && git push --follow-tags origin main && npm publish" ,
-       "semantic-release": "semantic-release"
+    "push": "npm run format:fix && standard-version && npm run rollup && git push --follow-tags origin main && npm publish",
+    "semantic-release": "semantic-release"
   },
   "keywords": [
     "mui",
@@ -87,7 +87,10 @@
     }
   },
   "dependencies": {},
-  "files":["dist","README.md"],
+  "files": [
+    "dist",
+    "README.md"
+  ],
   "publishConfig": {
     "access": "public"
   }
