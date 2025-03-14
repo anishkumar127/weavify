@@ -1,3 +1,10 @@
+## [1.17.10](https://github.com/anishkumar127/weavify/compare/v1.17.9...v1.17.10) (2025-03-14)
+
+
+### Bug Fixes
+
+* disable debug mode for semantic-release in release workflow ([8a4e228](https://github.com/anishkumar127/weavify/commit/8a4e228ee89e0a8e86dd0fd37315c7dd49ff0f04))
+
 ## [1.17.9](https://github.com/anishkumar127/weavify/compare/v1.17.8...v1.17.9) (2025-03-14)
 
 
