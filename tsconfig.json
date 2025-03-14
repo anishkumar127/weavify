@@ -6,7 +6,7 @@
       "dom.iterable",
       "esnext"
     ],
-    "types": ["@mui/system"],
+    // "types": ["@mui/system"],
     "allowJs": true,
     "skipLibCheck": true,
     "esModuleInterop": true,
