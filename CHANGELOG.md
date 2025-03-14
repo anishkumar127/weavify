@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.17.5](https://github.com/anishkumar127/weavify/compare/v1.17.4...v1.17.5) (2025-03-14)
+
+
+### Bug Fixes
+
+* enable GITHUB_TOKEN in release workflow ([4970620](https://github.com/anishkumar127/weavify/commit/497062003410611b88b2c0d19ad13bdec05cb6c4))
+* remove @mui/system from TypeScript types in tsconfig.json ([f9d266e](https://github.com/anishkumar127/weavify/commit/f9d266ef34c69e9307325c3dd1233e29d479fc5c))
+* update tsconfig.json to enable declaration file generation ([6673851](https://github.com/anishkumar127/weavify/commit/66738518f34e10b433388f5d766f6196bf909d4e))
+
 ### [1.17.4](https://github.com/anishkumar127/weavify/compare/v1.17.3...v1.17.4) (2025-03-14)
 
 
