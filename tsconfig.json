@@ -7,6 +7,10 @@
       "esnext"
     ],
     // "types": ["@mui/system"],
+    "outDir": "dist",
+    "declaration": true,
+    "emitDeclarationOnly": true,
+
     "allowJs": true,
     "skipLibCheck": true,
     "esModuleInterop": true,
