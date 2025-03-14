@@ -37,9 +37,9 @@ jobs:
       #for testing
       # - name: Debug NPM Token
       #   run: echo "NPM_TOKEN=${{ secrets.NPM_TOKEN }}"
-
       - name: Release
         env:
           GITHUB_TOKEN: ${{ secrets.G_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-        run: npx semantic-release --debug
+        run: npx semantic-release
+        # run: npx semantic-release --debug
