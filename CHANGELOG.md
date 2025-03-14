@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.17.6](https://github.com/anishkumar127/weavify/compare/v1.17.5...v1.17.6) (2025-03-14)
+
+
+### Bug Fixes
+
+* update release configuration to enable public npm publishing ([8f4b2e0](https://github.com/anishkumar127/weavify/commit/8f4b2e0b569fa78ff19c287ad507d624fe6e865f))
+* update release workflow to use npx instead of pnpx for semantic-release ([f89f90a](https://github.com/anishkumar127/weavify/commit/f89f90a920664e3a4d2c88ded4c37d71b9f55ec6))
+
 ### [1.17.5](https://github.com/anishkumar127/weavify/compare/v1.17.4...v1.17.5) (2025-03-14)
 
 
