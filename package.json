@@ -86,7 +86,9 @@
       "path": "cz-conventional-changelog"
     }
   },
-  "dependencies": {},
+  "dependencies": {
+    "@mui/system": "^6.4.7"
+  },
   "files": [
     "dist",
     "README.md"
