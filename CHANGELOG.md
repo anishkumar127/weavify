@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.17.7](https://github.com/anishkumar127/weavify/compare/v1.17.6...v1.17.7) (2025-03-14)
+
+
+### Bug Fixes
+
+* add debug step for NPM token in release workflow and include GitHub plugin in release configuration ([e8983d5](https://github.com/anishkumar127/weavify/commit/e8983d556c7ecf875e2ab424171de3269be14654))
+
 ### [1.17.6](https://github.com/anishkumar127/weavify/compare/v1.17.5...v1.17.6) (2025-03-14)
 
 
