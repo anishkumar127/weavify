@@ -15,9 +15,9 @@ export { default as OverflowSetV2 } from './components/OverflowSetV2';
 export { default as TabList } from './components/TabList';
 export { default as TinyTab } from './components/TinyTab';
 
+export { default as Input } from './components/Input';
 export { default as Label } from './components/Label';
 export { default as Radio } from './components/RadioButtonGroup';
-export { default as Input } from './components/TextInput';
 
 export { default as Avatar } from './components/Avatar';
 export { default as Button } from './components/Button';
