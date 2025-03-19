@@ -1,3 +1,11 @@
+## [1.20.1](https://github.com/anishkumar127/weavify/compare/v1.20.0...v1.20.1) (2025-03-19)
+
+
+### Bug Fixes
+
+* remove duplicate build command in release workflow ([f13ec33](https://github.com/anishkumar127/weavify/commit/f13ec332f53f7781cc81acf9d3d699483bfb8f7c))
+* resolve UI inconsistencies in MultiSelectDropdown component ([28503fb](https://github.com/anishkumar127/weavify/commit/28503fb350feac45b40518e2bae31b2e3330e701))
+
 # Changelog
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
