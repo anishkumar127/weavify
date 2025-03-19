@@ -1,6 +1,7 @@
 import { Autocomplete, InputLabel, TextField } from '@mui/material';
+import { memo } from 'react';
 
-interface AutocompleteProps<T> {
+interface DropdownProps<T> {
   options: T[];
   label: string;
   //   getOptionLabel: (option: T) => string;
@@ -20,7 +21,7 @@ interface AutocompleteProps<T> {
   disabled?: boolean;
 }
 
-function CustomAutocomplete<T>({
+function Dropdown<T>({
   id,
   options,
   label,
@@ -35,7 +36,7 @@ function CustomAutocomplete<T>({
   value,
   disabled = false,
   ...props
-}: AutocompleteProps<T>) {
+}: DropdownProps<T>) {
   return (
     <div className={wrapperStyle}>
       {isLabelRequired && (
@@ -57,7 +58,7 @@ function CustomAutocomplete<T>({
           <TextField
             {...params}
             placeholder={placeholder}
-            className={disabled ? '!bg-gray-500' : 'bg-white'}
+            className={`${disabled} ? '!bg-gray-500' : 'bg-white`}
             sx={{
               backgroundColor: disabled ? '#dadada4a' : '#fff',
             }}
@@ -70,4 +71,4 @@ function CustomAutocomplete<T>({
   );
 }
 
-export default CustomAutocomplete;
+export default memo(Dropdown);

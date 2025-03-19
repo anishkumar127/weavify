@@ -1,5 +1,5 @@
 import './index.css';
-export { default as Dropdown } from './components/Autocomplete';
+export { default as Dropdown } from './components/Dropdown';
 export { default as ChoiceDropdown } from './components/MultiSelectDropdown';
 export { default as Select } from './components/Select';
 
