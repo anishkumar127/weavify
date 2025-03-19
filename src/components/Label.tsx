@@ -1,20 +1,14 @@
 import { InputLabel, InputLabelProps } from '@mui/material';
-import React from 'react';
+import React, { memo } from 'react';
 
-interface CustomInputLabelProps extends InputLabelProps {
+interface LabelProps extends InputLabelProps {
   required?: boolean;
   label: string;
   htmlFor: string;
   className?: string;
 }
 
-const CustomInputLabel: React.FC<CustomInputLabelProps> = ({
-  htmlFor,
-  required = false,
-  className = '',
-  label,
-  ...props
-}) => {
+const Label: React.FC<LabelProps> = ({ htmlFor, required = false, className = '', label, ...props }) => {
   return (
     <InputLabel htmlFor={htmlFor} required={required} className={`!font-semibold ${className}`} {...props}>
       {label}
@@ -22,4 +16,4 @@ const CustomInputLabel: React.FC<CustomInputLabelProps> = ({
   );
 };
 
-export default CustomInputLabel;
+export default memo(Label);

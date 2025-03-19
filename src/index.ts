@@ -1,6 +1,6 @@
 import './index.css';
 export { default as Dropdown } from './components/Dropdown';
-export { default as ChoiceDropdown } from './components/MultiSelectDropdown';
+export { default as MultiSelectDropdown } from './components/MultiSelectDropdown';
 export { default as Select } from './components/Select';
 
 export { default as MultiPeoplePicker } from './components/MultiPeoplePicker';
@@ -15,7 +15,7 @@ export { default as OverflowSetV2 } from './components/OverflowSetV2';
 export { default as TabList } from './components/TabList';
 export { default as TinyTab } from './components/TinyTab';
 
-export { default as Label } from './components/InputLabel';
+export { default as Label } from './components/Label';
 export { default as Radio } from './components/RadioButtonGroup';
 export { default as Input } from './components/TextInput';
 
