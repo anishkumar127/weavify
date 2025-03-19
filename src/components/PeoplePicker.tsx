@@ -60,12 +60,12 @@ const PeoplePicker: React.FC<PeoplePickerProps> = ({
         onChange={onChange}
         renderInput={(params) => (
           <TextField
-            {...params}
-            className={`${disabled} ? '!bg-gray-500' : 'bg-white`}
+            placeholder={placeholder}
             sx={{
               backgroundColor: disabled ? '#dadada4a' : '#fff',
             }}
-            placeholder={placeholder}
+            className={`${disabled} ? '!bg-gray-500' : 'bg-white`}
+            {...params}
           />
         )}
         renderTags={(value: Person[], getTagProps) =>
