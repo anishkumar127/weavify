@@ -19,7 +19,7 @@ interface DropdownProps<T> {
 }
 
 /**
- * ChoiceDropdown Component
+ * MultiSelectDropdown  Component
  *
  * A customizable multi-select dropdown based on Material-UI's Autocomplete.
  * It allows selecting multiple options and supports various configurations like size, placeholder, and styles.
@@ -42,7 +42,7 @@ interface DropdownProps<T> {
  * @param {boolean} [required=false] - If true, marks the input as required.
  */
 
-function Dropdown<T>({
+function MultiSelectDropdown<T>({
   id,
   options,
   label,
@@ -92,4 +92,4 @@ function Dropdown<T>({
   );
 }
 
-export default Dropdown;
+export default MultiSelectDropdown;
