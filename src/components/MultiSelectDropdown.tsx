@@ -73,9 +73,30 @@ function MultiSelectDropdown<T>({
         onChange={onChange}
         id={id}
         value={value}
+        // Fixes UI inconsistencies
+        isOptionEqualToValue={(option, val) => option === val}
+        // renderTags={(selected) => {
+        //   if (selected.length === 0) return null;
+        //   const displayText = selected.map((item) => item.label).join(', ');
+        //   return (
+        //     <div
+        //       style={{
+        //         whiteSpace: 'nowrap',
+        //         overflow: 'hidden',
+        //         textOverflow: 'ellipsis',
+        //         maxWidth: 'calc(100% - 40px)',
+        //         display: 'block',
+        //         padding: '5px',
+        //       }}
+        //       title={displayText}
+        //     >
+        //       {displayText}
+        //     </div>
+        //   );
+        // }}
         renderInput={(params) => (
           <TextField
-            placeholder={placeholder}
+            placeholder={value.length === 0 ? placeholder : ''}
             sx={{
               minHeight: 'auto',
               '& .MuiOutlinedInput-root': {
@@ -83,7 +104,7 @@ function MultiSelectDropdown<T>({
               },
               backgroundColor: disabled ? '#dadada4a' : '#fff',
             }}
-            className={`${disabled} ? '!bg-gray-500' : 'bg-white`}
+            className={disabled ? 'bg-gray-300' : 'bg-white'}
             {...params}
           />
         )}
