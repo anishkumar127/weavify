@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.20.0](https://github.com/anishkumar127/weavify/compare/v1.19.0...v1.20.0) (2025-03-19)
+
+
+### Features
+
+* refactor MultiSelectDropdown component for improved performance and maintainability ([5cdd44c](https://github.com/anishkumar127/weavify/commit/5cdd44c1d317c7e3170324601f1f3f92838e29c9))
+* replace CustomAutocomplete with Dropdown component for improved functionality ([004bcad](https://github.com/anishkumar127/weavify/commit/004bcadeeb50e2558392161ff371e778e6d4e66b))
+
+
+### Bug Fixes
+
+* correct placeholder and className order in PeoplePicker component ([13fd156](https://github.com/anishkumar127/weavify/commit/13fd1560e42d80cc733d76c8c7d119c6b6edfc33))
+
 ## [1.19.0](https://github.com/anishkumar127/weavify/compare/v1.18.0...v1.19.0) (2025-03-19)
 
 
