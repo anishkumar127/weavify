@@ -1,22 +1,5 @@
 import { Autocomplete, InputLabel, TextField } from '@mui/material';
-
-interface DropdownProps<T> {
-  options: T[];
-  label: string;
-  sx?: object;
-  id: string;
-  size?: 'small' | 'medium';
-  searchStyle?: string;
-  placeholder?: string;
-  isLabelRequired?: boolean;
-  wrapperStyle?: string;
-  required?: boolean;
-  // Adjusted for multi-select
-  value: T[];
-  // Adjusted for multi-select
-  onChange: (event: any, value: T[]) => void;
-  disabled?: boolean;
-}
+import { memo } from 'react';
 
 /**
  * MultiSelectDropdown  Component
@@ -42,6 +25,24 @@ interface DropdownProps<T> {
  * @param {boolean} [required=false] - If true, marks the input as required.
  */
 
+interface MultiSelectDropdownProps<T> {
+  options: T[];
+  label: string;
+  sx?: object;
+  id: string;
+  size?: 'small' | 'medium';
+  searchStyle?: string;
+  placeholder?: string;
+  isLabelRequired?: boolean;
+  wrapperStyle?: string;
+  required?: boolean;
+  // Adjusted for multi-select
+  value: T[];
+  // Adjusted for multi-select
+  onChange: (event: any, value: T[]) => void;
+  disabled?: boolean;
+}
+
 function MultiSelectDropdown<T>({
   id,
   options,
@@ -57,7 +58,7 @@ function MultiSelectDropdown<T>({
   value,
   disabled,
   ...props
-}: DropdownProps<T>) {
+}: MultiSelectDropdownProps<T>) {
   return (
     <div className={wrapperStyle}>
       {isLabelRequired && (
@@ -67,29 +68,33 @@ function MultiSelectDropdown<T>({
       )}
       <Autocomplete
         multiple
-        disablePortal
+        // disablePortal
         options={options}
         onChange={onChange}
-        sx={sx}
-        className={searchStyle}
-        size={size}
         id={id}
         value={value}
         renderInput={(params) => (
           <TextField
-            {...params}
             placeholder={placeholder}
-            className={`${disabled} ? '!bg-gray-500' : 'bg-white`}
             sx={{
+              minHeight: 'auto',
+              '& .MuiOutlinedInput-root': {
+                height: 'auto',
+              },
               backgroundColor: disabled ? '#dadada4a' : '#fff',
             }}
+            className={`${disabled} ? '!bg-gray-500' : 'bg-white`}
+            {...params}
           />
         )}
         disabled={disabled}
+        size={size}
+        sx={sx}
+        className={searchStyle}
         {...props}
       />
     </div>
   );
 }
 
-export default MultiSelectDropdown;
+export default memo(MultiSelectDropdown);
