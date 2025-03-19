@@ -2,30 +2,32 @@ import { Autocomplete, InputLabel, TextField } from '@mui/material';
 import { memo } from 'react';
 
 /**
- * MultiSelectDropdown  Component
+ * MultiSelectDropdown Component
  *
  * A customizable multi-select dropdown based on Material-UI's Autocomplete.
- * It allows selecting multiple options and supports various configurations like size, placeholder, and styles.
+ * Supports multiple selections with customization options like size, placeholder, and styling.
  *
  * Author: Anish Kumar
  * Email: anishbishnoi127@gmail.com
  *
  * @template T
- * @param {T[]} options - The list of options to display in the dropdown.
- * @param {string} label - The label displayed above the dropdown (optional).
+ * @param {T[]} options - List of available options.
+ * @param {string} label - Label displayed above the dropdown (optional).
  * @param {string} id - Unique identifier for the dropdown component.
  * @param {boolean} [isLabelRequired=false] - Determines whether the label is displayed.
- * @param {T[]} value - The current selected options.
- * @param {(event: any, value: T[]) => void} onChange - Callback function triggered when the selected options change.
- * @param {string} [placeholder='Select options'] - Placeholder text displayed when no option is selected.
+ * @param {T[]} value - Currently selected options.
+ * @param {(event: any, value: T[]) => void} onChange - Callback function when selection changes.
+ * @param {string} [placeholder='Select options'] - Placeholder text for the dropdown.
  * @param {object} [sx] - Custom Material-UI styles for the dropdown container.
- * @param {'small' | 'medium'} [size='small'] - Size of the dropdown (small or medium).
- * @param {string} [searchStyle] - Additional CSS classes for styling the search box.
- * @param {string} [wrapperStyle] - Additional CSS classes for styling the dropdown wrapper.
- * @param {boolean} [required=false] - If true, marks the input as required.
+ * @param {'small' | 'medium'} [size='small'] - Size of the dropdown.
+ * @param {string} [searchStyle] - Additional CSS classes for the search box.
+ * @param {string} [wrapperStyle] - CSS classes for the dropdown wrapper.
+ * @param {boolean} [required=false] - Marks the input as required.
+ * @param {boolean} [disabled=false] - Disables the dropdown.
+ * @param {boolean} [disableCloseOnSelect=false] - Keeps the dropdown open after selection.
  */
 
-interface MultiSelectDropdownProps<T> {
+interface MultiSelectDropdownProps<T extends { label: string; value: string | number }> {
   options: T[];
   label: string;
   sx?: object;
@@ -41,9 +43,10 @@ interface MultiSelectDropdownProps<T> {
   // Adjusted for multi-select
   onChange: (event: any, value: T[]) => void;
   disabled?: boolean;
+  disableCloseOnSelect?: boolean;
 }
 
-function MultiSelectDropdown<T>({
+function MultiSelectDropdown<T extends { label: string; value: string | number }>({
   id,
   options,
   label,
@@ -57,6 +60,7 @@ function MultiSelectDropdown<T>({
   required = false,
   value,
   disabled,
+  disableCloseOnSelect = false,
   ...props
 }: MultiSelectDropdownProps<T>) {
   return (
@@ -68,13 +72,16 @@ function MultiSelectDropdown<T>({
       )}
       <Autocomplete
         multiple
+        id={id}
         // disablePortal
         options={options}
+        disableCloseOnSelect={disableCloseOnSelect}
+        getOptionLabel={(option) => option.label}
+        // isOptionEqualToValue={(option, val) => option === val}
+        isOptionEqualToValue={(option, val) => option.value === val.value}
         onChange={onChange}
-        id={id}
         value={value}
         // Fixes UI inconsistencies
-        isOptionEqualToValue={(option, val) => option === val}
         // renderTags={(selected) => {
         //   if (selected.length === 0) return null;
         //   const displayText = selected.map((item) => item.label).join(', ');
