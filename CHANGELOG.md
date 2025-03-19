@@ -1,3 +1,16 @@
+# Changelog
+
+All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
+
+## [1.19.0](https://github.com/anishkumar127/weavify/compare/v1.18.0...v1.19.0) (2025-03-19)
+
+
+### Features
+
+* replace GroupPeoplePicker with MultiPeoplePicker for improved multi-select functionality ([4f3d6b1](https://github.com/anishkumar127/weavify/commit/4f3d6b14ae73da34b13fba5c29cdecf41e707ece))
+
+### [1.17.10](https://github.com/anishkumar127/weavify/compare/v1.17.9...v1.17.10) (2025-03-14)
+
 ## [1.17.10](https://github.com/anishkumar127/weavify/compare/v1.17.9...v1.17.10) (2025-03-14)
 
 
