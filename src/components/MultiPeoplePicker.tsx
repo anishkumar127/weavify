@@ -8,7 +8,7 @@ import {
   ListItemText,
   TextField,
 } from '@mui/material';
-import React, { SyntheticEvent } from 'react';
+import React, { memo, SyntheticEvent } from 'react';
 
 interface Person {
   id: number;
@@ -17,7 +17,7 @@ interface Person {
   avatar?: string;
 }
 
-interface GroupPeoplePickerProps {
+interface MultiPeoplePickerProps {
   options: Person[];
   value: Person[];
   onChange: (event: SyntheticEvent<Element, Event>, value: Person[]) => void;
@@ -30,7 +30,7 @@ interface GroupPeoplePickerProps {
   disabled?: boolean;
 }
 
-const GroupPeoplePicker: React.FC<GroupPeoplePickerProps> = ({
+const MultiPeoplePicker: React.FC<MultiPeoplePickerProps> = ({
   options,
   value,
   onChange,
@@ -61,7 +61,6 @@ const GroupPeoplePicker: React.FC<GroupPeoplePickerProps> = ({
         onChange={onChange}
         renderInput={(params) => (
           <TextField
-            {...params}
             placeholder={placeholder}
             sx={{
               minHeight: 'auto',
@@ -70,8 +69,8 @@ const GroupPeoplePicker: React.FC<GroupPeoplePickerProps> = ({
               },
               backgroundColor: disabled ? '#dadada4a' : '#fff',
             }}
-            size="small"
             className={`${disabled} ? '!bg-gray-500' : 'bg-white`}
+            {...params}
           />
         )}
         renderTags={(selected: Person[], getTagProps) =>
@@ -99,4 +98,4 @@ const GroupPeoplePicker: React.FC<GroupPeoplePickerProps> = ({
   );
 };
 
-export default GroupPeoplePicker;
+export default memo(MultiPeoplePicker);

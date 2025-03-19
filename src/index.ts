@@ -3,7 +3,7 @@ export { default as Dropdown } from './components/Autocomplete';
 export { default as ChoiceDropdown } from './components/MultiSelectDropdown';
 export { default as Select } from './components/Select';
 
-export { default as GroupPeoplePicker } from './components/GroupPeoplePicker';
+export { default as MultiPeoplePicker } from './components/MultiPeoplePicker';
 export { default as PeoplePicker } from './components/PeoplePicker';
 
 export { default as Drawer } from './components/Drawer';
