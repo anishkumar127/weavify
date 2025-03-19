@@ -19,7 +19,7 @@
 import { InputLabel, TextField, TextFieldProps } from '@mui/material';
 import React from 'react';
 
-interface TextInputProps extends Omit<TextFieldProps, 'label' | 'id' | 'type' | 'placeholder'> {
+interface InputProps extends Omit<TextFieldProps, 'label' | 'id' | 'type' | 'placeholder'> {
   label: string;
   id: string;
   type?: string;
@@ -30,7 +30,7 @@ interface TextInputProps extends Omit<TextFieldProps, 'label' | 'id' | 'type' | 
   wrapperStyle?: string;
 }
 
-const CustomTextInput: React.FC<TextInputProps> = ({
+const Input: React.FC<InputProps> = ({
   label,
   id,
   type = 'text',
@@ -49,16 +49,16 @@ const CustomTextInput: React.FC<TextInputProps> = ({
         </InputLabel>
       )}
       <TextField
-        className={inputStyle}
         type={type}
-        variant="outlined"
         id={id}
-        size="small"
+        variant="outlined"
         placeholder={placeholder}
+        className={inputStyle}
+        size="small"
         {...props}
       />
     </div>
   );
 };
 
-export default React.memo(CustomTextInput);
+export default React.memo(Input);
