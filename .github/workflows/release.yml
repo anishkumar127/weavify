@@ -33,6 +33,7 @@ jobs:
 
       - name: Build project
         run: pnpm run rollup
+        run: pnpm run rollup
 
       #for testing
       # - name: Debug NPM Token
