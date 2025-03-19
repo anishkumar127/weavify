@@ -1,3 +1,19 @@
+# Changelog
+
+All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
+
+## [1.18.0](https://github.com/anishkumar127/weavify/compare/v1.17.9...v1.18.0) (2025-03-19)
+
+
+### Features
+
+* replace Dropdown component with MultiSelectDropdown for enhanced multi-select functionality ([a767cf1](https://github.com/anishkumar127/weavify/commit/a767cf1a0e72f5203aebc8f8fea5f0c45bf44656))
+
+
+### Bug Fixes
+
+* disable debug mode for semantic-release in release workflow ([8a4e228](https://github.com/anishkumar127/weavify/commit/8a4e228ee89e0a8e86dd0fd37315c7dd49ff0f04))
+
 ## [1.17.9](https://github.com/anishkumar127/weavify/compare/v1.17.8...v1.17.9) (2025-03-14)
 
 
