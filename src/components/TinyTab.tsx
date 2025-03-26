@@ -1,3 +1,4 @@
+'use client';
 import { Tab, TabProps, Tabs, TabsProps } from '@mui/material';
 
 interface TabItem {
@@ -11,6 +12,10 @@ interface TinyTabProps extends Partial<TabsProps> {
   setSelectedPivot: (value: string) => void;
   tabs: TabItem[];
   containerClassName?: string;
+  childClassName?: string;
+  disableDefaultContainerStyles?: boolean;
+  disableDefaultTabStyles?: boolean;
+  // sx?: TabProps['sx'];
 }
 
 const TinyTab: React.FC<TinyTabProps> = ({
@@ -18,15 +23,15 @@ const TinyTab: React.FC<TinyTabProps> = ({
   setSelectedPivot,
   tabs,
   containerClassName = '',
+  childClassName = '',
+  disableDefaultContainerStyles = false,
+  disableDefaultTabStyles = false,
   ...tabsProps
+  // childSx,
 }) => {
-  return (
-    <Tabs
-      value={selectedPivot ?? tabs[0]?.key}
-      aria-label="dynamic tabs"
-      className={containerClassName}
-      {...tabsProps}
-      sx={{
+  const containerSx = disableDefaultContainerStyles
+    ? tabsProps.sx
+    : {
         minHeight: 'unset',
         height: '32px',
         '& .MuiTabs-indicator': {
@@ -36,30 +41,44 @@ const TinyTab: React.FC<TinyTabProps> = ({
           gap: '5px',
         },
         ...tabsProps.sx,
-      }}
+      };
+  return (
+    <Tabs
+      value={selectedPivot ?? tabs[0]?.key}
+      aria-label="dynamic tiny tabs"
+      {...tabsProps}
+      sx={containerSx}
+      className={containerClassName}
     >
-      {tabs.map(({ key, label, sx }) => (
-        <Tab
-          key={key}
-          value={key}
-          label={<span className="text-sm leading-none">{label}</span>}
-          onClick={() => setSelectedPivot(key)}
-          sx={{
-            padding: 0,
-            minHeight: 'unset',
-            height: '32px',
-            maxWidth: 'auto',
-            minWidth: '65px',
-            lineHeight: '32px',
-            '&.Mui-selected': {
-              borderBottom: 'none',
-            },
-            ...sx,
-          }}
-        />
-      ))}
+      {tabs.map(({ key, label, sx }) => {
+        const tabSx = disableDefaultTabStyles
+          ? sx
+          : {
+              padding: 0,
+              minHeight: 'unset',
+              height: '32px',
+              maxWidth: 'auto',
+              minWidth: '65px',
+              lineHeight: '32px',
+              '&.Mui-selected': {
+                borderBottom: 'none',
+              },
+              ...sx,
+            };
+
+        return (
+          <Tab
+            key={key}
+            value={key}
+            label={<span className="text-sm leading-none">{label}</span>}
+            onClick={() => setSelectedPivot(key)}
+            sx={tabSx}
+            className={childClassName}
+          />
+        );
+      })}
     </Tabs>
   );
 };
 
-export default TinyTab;
+export default memo(TinyTab);
