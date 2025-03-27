@@ -80,7 +80,7 @@ const RadioButtonGroup: React.FC<RadioButtonGroupProps> = ({
         {options.map((option, idx: number) => (
           <FormControlLabel
             key={idx || option.value}
-            className="!flex"
+            className="!flex !pl-1.5"
             value={option.value}
             control={<Radio className={radioStyle} />}
             label={option.label}
