@@ -77,10 +77,10 @@ const RadioButtonGroup: React.FC<RadioButtonGroupProps> = ({
         row={alignment === 'row'}
         {...props}
       >
-        {options.map((option) => (
+        {options.map((option, idx: number) => (
           <FormControlLabel
-            key={option.value}
-            className="!flex !pl-1.5"
+            key={idx || option.value}
+            className="!flex"
             value={option.value}
             control={<Radio className={radioStyle} />}
             label={option.label}
