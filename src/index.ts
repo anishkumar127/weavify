@@ -3,6 +3,8 @@ export { default as Dropdown } from './components/Dropdown';
 export { default as MultiSelectDropdown } from './components/MultiSelectDropdown';
 export { default as Select } from './components/Select';
 
+export { default as MultiCheckbox } from './components/MultiCheckbox';
+
 export { default as MultiPeoplePicker } from './components/MultiPeoplePicker';
 export { default as PeoplePicker } from './components/PeoplePicker';
 
