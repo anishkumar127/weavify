@@ -1,3 +1,11 @@
+# [1.22.0](https://github.com/anishkumar127/weavify/compare/v1.21.0...v1.22.0) (2025-03-28)
+
+
+### Features
+
+* add clsx and tailwind-merge for improved class name management; update MultiCheckbox and TinyTab components ([71c9ff3](https://github.com/anishkumar127/weavify/commit/71c9ff338e483e04e291ddf2718ae8af61ebb015))
+* add MultiCheckbox component for selecting multiple options ([0d0e8f0](https://github.com/anishkumar127/weavify/commit/0d0e8f09fc770d6d982430a9c13999f620721508))
+
 # [1.21.0](https://github.com/anishkumar127/weavify/compare/v1.20.1...v1.21.0) (2025-03-19)
 
 
