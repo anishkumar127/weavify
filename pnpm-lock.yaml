@@ -23,6 +23,9 @@ importers:
       '@mui/system':
         specifier: ^6.4.7
         version: 6.4.7(@emotion/react@11.14.0(@types/react@18.3.18)(react@18.3.1))(@emotion/styled@11.14.0(@emotion/react@11.14.0(@types/react@18.3.18)(react@18.3.1))(@types/react@18.3.18)(react@18.3.1))(@types/react@18.3.18)(react@18.3.1)
+      clsx:
+        specifier: ^2.1.1
+        version: 2.1.1
       react:
         specifier: ^18.3.1
         version: 18.3.1
@@ -32,6 +35,9 @@ importers:
       sweetalert2:
         specifier: ^11.15.10
         version: 11.17.2
+      tailwind-merge:
+        specifier: ^3.0.2
+        version: 3.0.2
       tailwindcss:
         specifier: ^3.4.17
         version: 3.4.17
@@ -3828,6 +3834,9 @@ packages:
 
   sweetalert2@11.17.2:
     resolution: {integrity: sha512-HKxDr1IyV3Lxr3W6sb61qm/p2epFIEdr5EKwteRFHnIg6f8nHFl2kX++DBVz16Mac+fFiU3hMpjq1L6yE2Ge5w==}
+
+  tailwind-merge@3.0.2:
+    resolution: {integrity: sha512-l7z+OYZ7mu3DTqrL88RiKrKIqO3NcpEO8V/Od04bNpvk0kiIFndGEoqfuzvj4yuhRkHKjRkII2z+KS2HfPcSxw==}
 
   tailwindcss@3.4.17:
     resolution: {integrity: sha512-w33E2aCvSDP0tW9RZuNXadXlkHXqFzSkQew/aIa2i/Sj8fThxwovwlXHSPXTbAHwEIhBFXAedUhP2tueAKP8Og==}
@@ -8151,6 +8160,8 @@ snapshots:
       stable: 0.1.8
 
   sweetalert2@11.17.2: {}
+
+  tailwind-merge@3.0.2: {}
 
   tailwindcss@3.4.17:
     dependencies:

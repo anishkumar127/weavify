@@ -1,5 +1,6 @@
 'use client';
 import { Tab, TabProps, Tabs, TabsProps } from '@mui/material';
+import { memo } from 'react';
 
 interface TabItem {
   key: string;

@@ -20,9 +20,9 @@
  * @param {string} [checkboxStyle] - Custom styling for each checkbox.
  */
 
-import { cn } from '@/utils/utils';
 import { Checkbox, FormControlLabel, FormGroup, InputLabel } from '@mui/material';
 import { memo } from 'react';
+import { cn } from '../utils/utils';
 
 interface Option {
   value: string;
