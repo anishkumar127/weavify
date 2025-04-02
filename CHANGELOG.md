@@ -1,3 +1,10 @@
+# [1.23.0](https://github.com/anishkumar127/weavify/compare/v1.22.0...v1.23.0) (2025-04-02)
+
+
+### Features
+
+* add disableClearable prop to Dropdown component for enhanced functionality ([bdfea21](https://github.com/anishkumar127/weavify/commit/bdfea21e053254faab2c2ca2ef96a6e7dcfb6c8c))
+
 # [1.22.0](https://github.com/anishkumar127/weavify/compare/v1.21.0...v1.22.0) (2025-03-28)
 
 
