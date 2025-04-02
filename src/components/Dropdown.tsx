@@ -19,6 +19,7 @@ interface DropdownProps<T> {
   // ! fix later
   onChange: any;
   disabled?: boolean;
+  disableClearable?: boolean;
 }
 
 function Dropdown<T>({
@@ -35,6 +36,7 @@ function Dropdown<T>({
   required = false,
   value,
   disabled = false,
+  disableClearable = false,
   ...props
 }: DropdownProps<T>) {
   return (
@@ -54,6 +56,7 @@ function Dropdown<T>({
         size={size}
         id={id}
         value={value}
+        disableClearable={disableClearable}
         renderInput={(params) => (
           <TextField
             {...params}
