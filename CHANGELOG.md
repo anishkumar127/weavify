@@ -1,3 +1,10 @@
+## [1.24.1](https://github.com/anishkumar127/weavify/compare/v1.24.0...v1.24.1) (2025-04-11)
+
+
+### Bug Fixes
+
+* remove 'use client' directive from TinyTab component ([e4d18eb](https://github.com/anishkumar127/weavify/commit/e4d18ebe1c2d50aca275090acc9a59b32167f30f))
+
 # [1.24.0](https://github.com/anishkumar127/weavify/compare/v1.23.0...v1.24.0) (2025-04-11)
 
 
