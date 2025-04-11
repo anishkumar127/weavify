@@ -1,3 +1,10 @@
+# [1.24.0](https://github.com/anishkumar127/weavify/compare/v1.23.0...v1.24.0) (2025-04-11)
+
+
+### Features
+
+* add AddButton component for customizable button functionality ([6f5999e](https://github.com/anishkumar127/weavify/commit/6f5999e927515bb8cf8ec145df071ed4ec4b741a))
+
 # [1.23.0](https://github.com/anishkumar127/weavify/compare/v1.22.0...v1.23.0) (2025-04-02)
 
 
