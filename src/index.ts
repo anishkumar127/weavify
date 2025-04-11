@@ -1,4 +1,5 @@
 import './index.css';
+export { default as AddButton } from './components/AddButton';
 export { default as Dropdown } from './components/Dropdown';
 export { default as MultiSelectDropdown } from './components/MultiSelectDropdown';
 export { default as Select } from './components/Select';
