@@ -4,7 +4,7 @@ import { SortableContext, arrayMove, verticalListSortingStrategy } from '@dnd-ki
 import { ArrowLeftRegular, ArrowRightRegular, ReOrderDotsVerticalRegular } from '@fluentui/react-icons';
 import { Checkbox } from '@mui/material';
 import { useEffect } from 'react';
-import { Label } from 'weavify';
+import { Label } from '../../index';
 import DraggableRow from './DraggableRow';
 import { TableSettingsProps } from './types';
 
@@ -67,22 +67,22 @@ function TableSettings<TData>({
     setColumnPinning((prev) => ({
       ...prev,
       right: [...new Set([...prev.right, key])],
-      left: prev.left.filter((k) => k !== key),
+      left: prev?.left.filter((k) => k !== key),
     }));
   };
 
   // Unpin a single column
   const handleUnpin = (key: string) => {
     setColumnPinning((prev) => ({
-      left: prev.left.filter((k) => k !== key),
-      right: prev.right.filter((k) => k !== key),
+      left: prev?.left.filter((k) => k !== key),
+      right: prev?.right.filter((k) => k !== key),
     }));
   };
 
   // Check if pinned
   const isPinned = (key: string) => {
-    if (columnPinning.left.includes(key)) return 'left';
-    if (columnPinning.right.includes(key)) return 'right';
+    if (columnPinning?.left.includes(key)) return 'left';
+    if (columnPinning?.right.includes(key)) return 'right';
     return null;
   };
 

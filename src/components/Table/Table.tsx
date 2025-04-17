@@ -28,14 +28,13 @@ import {
 } from '@tanstack/react-table';
 import { useEffect, useRef, useState } from 'react';
 import { AiOutlineFileExcel } from 'react-icons/ai';
-import { Button, Input } from 'weavify';
+import { Button, Input, Select } from '../../index';
 
-import { Select } from '@/common/components';
 import TableFilter from './TableFilter';
 
+import { cn } from '../../utils/utils';
 import TableSettings from './TableSettings';
 import { TableProps } from './types';
-import { cn } from '@/utils/utils';
 // const TableSettings = lazy(() => import('./TableSettings'));
 const Table = <TData extends object = any>({
   data,
@@ -64,9 +63,9 @@ const Table = <TData extends object = any>({
 
   const [columnSizing, setColumnSizing] = useState({});
   const [columnVisibility, setColumnVisibility] = useState(
-    Object.fromEntries(columns.map((col) => [String(col.accessorKey), true])) || {},
+    Object.fromEntries(columns.map((col) => [String(col?.accessorKey), true])) || {},
   );
-  const [columnOrder, setColumnOrder] = useState(columns.map((col) => String(col.accessorKey)));
+  const [columnOrder, setColumnOrder] = useState(columns.map((col) => String(col?.accessorKey)));
   const [columnPinning, setColumnPinning] = useState<ColumnPinningState>({
     left: [],
     right: [],
@@ -162,7 +161,7 @@ const Table = <TData extends object = any>({
     const rows = table.getFilteredRowModel().rows;
     const leafColumns = table.getAllLeafColumns();
     const includedColumns = leafColumns.filter(
-      (col) => col.getIsVisible() && !excludeColumns.includes(String(col.accessorKey)),
+      (col) => col.getIsVisible() && !excludeColumns.includes(String(col?.accessorKey)),
     );
     const headers = includedColumns.map((col) => String(col.columnDef.header));
 

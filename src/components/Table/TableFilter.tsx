@@ -1,7 +1,6 @@
-import { Select } from '@/common/components';
 import { Slider } from '@mui/material';
 import { Column } from '@tanstack/react-table';
-import { Input } from 'weavify';
+import { Input, Select } from '../../index';
 import { CustomColumnMeta } from './types';
 
 interface TableFilterProps<TData> {
