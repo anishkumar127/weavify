@@ -30,15 +30,20 @@ export default [
       commonjs(),
       typescript({
         tsconfig: './tsconfig.json',
-        noCheck: true, // Disable type checking
+        // Disable type checking
+        noCheck: true,
       }),
       terser(),
       postcss({
-        extract: true, // Extract CSS into a separate file
-        minimize: true, // Minify CSS
+        // Extract CSS into a separate file
+        extract: true,
+        // Minify CSS
+        minimize: true,
         plugins: [
-          tailwindcss(), // Make sure you've installed tailwindcss
-          autoprefixer(), // ...and autoprefixer
+          // Make sure you've installed tailwindcss
+          tailwindcss(),
+          // ...and autoprefixer
+          autoprefixer(),
         ],
       }),
       // postcss({
