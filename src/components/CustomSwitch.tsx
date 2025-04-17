@@ -8,7 +8,7 @@ interface CustomSwitchProps {
   onChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
 }
 
-const CustomSwitch = styled(({ className, ...props }: CustomSwitchProps & { className?: string }) => (
+const CustomSwitch: React.ComponentType<CustomSwitchProps & { className?: string; trackColorOn?: string; trackColorOff?: string; thumbColorOn?: string; thumbColorOff?: string }> = styled(({ className, ...props }: CustomSwitchProps & { className?: string }) => (
   <Switch disableRipple {...props} className={className} />
 ))<{
   trackColorOn?: string;
