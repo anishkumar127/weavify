@@ -4,7 +4,7 @@ export { default as CustomSelect } from './components/CustomSelect';
 export { default as Dropdown } from './components/Dropdown';
 export { default as MultiSelectDropdown } from './components/MultiSelectDropdown';
 export { default as Select } from './components/Select';
-export { default as Table } from './components/Table/Table';
+// export { default as Table } from './components/Table/Table';
 
 export { default as MultiCheckbox } from './components/MultiCheckbox';
 
