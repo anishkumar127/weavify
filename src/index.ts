@@ -26,7 +26,7 @@ export { default as Avatar } from './components/Avatar';
 export { default as Button } from './components/Button';
 export { default as Tooltip } from './components/Tooltip';
 
-export { default as CustomSwitch } from './components/CustomSwitch';
+export { default as Switch } from './components/CustomSwitch';
 // hooks
 
 export { Alerts } from './hooks/Alerts';
