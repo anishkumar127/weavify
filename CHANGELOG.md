@@ -1,3 +1,13 @@
+## [1.24.2](https://github.com/anishkumar127/weavify/compare/v1.24.1...v1.24.2) (2025-04-17)
+
+
+### Bug Fixes
+
+* adjust padding for Autocomplete input in MultiPeoplePicker component ([b729dc7](https://github.com/anishkumar127/weavify/commit/b729dc780a9cb75946b4b598fe77c312e4b4f5d9))
+* enhance type definition for CustomSwitch component to include additional props ([ca28bd9](https://github.com/anishkumar127/weavify/commit/ca28bd9a37521897072146095c33ae284f5a3368))
+* refactor CustomSwitch component type definition and restore border style for track ([1875549](https://github.com/anishkumar127/weavify/commit/18755490cf56a9781d47bcfacdfc5ebc3849a8e0))
+* rename export for CustomSwitch to Switch for consistency ([8c4061c](https://github.com/anishkumar127/weavify/commit/8c4061c16ab278809a7905b13f1403819591abc7))
+
 ## [1.24.1](https://github.com/anishkumar127/weavify/compare/v1.24.0...v1.24.1) (2025-04-11)
 
 
