@@ -66,6 +66,7 @@ const MultiPeoplePicker: React.FC<MultiPeoplePickerProps> = ({
               minHeight: 'auto',
               '& .MuiOutlinedInput-root': {
                 height: 'auto',
+                padding: '0px',
               },
               backgroundColor: disabled ? '#dadada4a' : '#fff',
             }}
