@@ -1,3 +1,10 @@
+# [1.25.0](https://github.com/anishkumar127/weavify/compare/v1.24.2...v1.25.0) (2025-04-17)
+
+
+### Features
+
+* add CustomSelect component for enhanced selection functionality ([21fc08a](https://github.com/anishkumar127/weavify/commit/21fc08a09a63daeb7c6c9e60e4a68efec02c30d5))
+
 ## [1.24.2](https://github.com/anishkumar127/weavify/compare/v1.24.1...v1.24.2) (2025-04-17)
 
 
