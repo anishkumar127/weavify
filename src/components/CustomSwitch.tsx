@@ -8,11 +8,9 @@ interface CustomSwitchProps {
   onChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
 }
 
-const CustomSwitch: React.ComponentType<CustomSwitchProps & { className?: string }> = styled(
-  ({ className, ...props }: CustomSwitchProps & { className?: string }) => (
-    <Switch disableRipple {...props} className={className} />
-  ),
-)<{
+const CustomSwitch = styled(({ className, ...props }: CustomSwitchProps & { className?: string }) => (
+  <Switch disableRipple {...props} className={className} />
+))<{
   trackColorOn?: string;
   trackColorOff?: string;
   thumbColorOn?: string;
@@ -73,6 +71,7 @@ const CustomSwitch: React.ComponentType<CustomSwitchProps & { className?: string
     '& .MuiSwitch-track': {
       borderRadius: 10,
       backgroundColor: trackColorOff,
+      border: '1px solid #605e5c',
       opacity: 1,
       transition: theme.transitions.create(['background-color'], {
         duration: 500,
