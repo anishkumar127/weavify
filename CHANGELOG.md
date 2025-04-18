@@ -1,3 +1,17 @@
+# [1.26.0](https://github.com/anishkumar127/weavify/compare/v1.25.0...v1.26.0) (2025-04-17)
+
+
+### Bug Fixes
+
+* update tsconfig.json to exclude Table component from compilation ([7cbd623](https://github.com/anishkumar127/weavify/commit/7cbd6234f2736eb2379fac19264091bdc1212175))
+
+
+### Features
+
+* add Table, TableFilter, TableSettings, and DraggableRow components with filtering and drag-and-drop functionality ([31607dd](https://github.com/anishkumar127/weavify/commit/31607ddc4fea2ee2bc2de08e947320a108f90ca8))
+* enhance MultiSelectDropdown component with disableClearable prop and improve documentation ([460aeb8](https://github.com/anishkumar127/weavify/commit/460aeb8e4337319ccf3ed8cfe673853952ddddda))
+* update dependencies and improve Table component functionality with enhanced column handling ([d74f115](https://github.com/anishkumar127/weavify/commit/d74f115b69eb9476ad76be655b886e111f4c64c1))
+
 # [1.25.0](https://github.com/anishkumar127/weavify/compare/v1.24.2...v1.25.0) (2025-04-17)
 
 
