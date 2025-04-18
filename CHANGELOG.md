@@ -1,3 +1,10 @@
+# [1.27.0](https://github.com/anishkumar127/weavify/compare/v1.26.0...v1.27.0) (2025-04-18)
+
+
+### Features
+
+* add MultiDropdown component for customizable multi-select functionality ([2de8179](https://github.com/anishkumar127/weavify/commit/2de81790467b855093ecc7e729ad9e92af73a541))
+
 # [1.26.0](https://github.com/anishkumar127/weavify/compare/v1.25.0...v1.26.0) (2025-04-17)
 
 
