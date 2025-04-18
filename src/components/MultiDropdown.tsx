@@ -106,7 +106,7 @@ function MultiDropdown<T extends { label: string; value: string | number }>({
         }}
         renderInput={(params) => (
           <TextField
-            placeholder={value.length === 0 ? placeholder : ''}
+            placeholder={value?.length === 0 ? placeholder : ''}
             className={disabled ? 'bg-gray-300' : 'bg-white'}
             {...params}
             inputProps={{
@@ -115,7 +115,7 @@ function MultiDropdown<T extends { label: string; value: string | number }>({
                 ...params.inputProps.style,
                 flexGrow: 0,
                 flexShrink: 1,
-                width: value.length === 0 ? 'auto' : '',
+                width: value?.length === 0 ? 'auto' : '',
                 minWidth: 0,
               },
             }}
