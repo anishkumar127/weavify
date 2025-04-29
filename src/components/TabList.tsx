@@ -8,11 +8,22 @@ interface TabItem {
 interface TabListProps {
   selectedPivot: string | null;
   setSelectedPivot: (value: string) => void;
-  pivotCount: Record<string, number>;
+  pivotCount?: Record<string, number>;
   tabs: TabItem[];
+  trigger?: boolean;
+  setTrigger?: React.Dispatch<React.SetStateAction<boolean>>;
+  isTrigger?: boolean;
 }
 
-const TabList = ({ selectedPivot, setSelectedPivot, pivotCount, tabs }: TabListProps) => {
+const TabList = ({
+  selectedPivot,
+  setSelectedPivot,
+  pivotCount,
+  tabs,
+  trigger,
+  setTrigger,
+  isTrigger = false,
+}: TabListProps) => {
   return (
     <Tabs
       value={selectedPivot ?? tabs[0]?.key}
@@ -31,10 +42,21 @@ const TabList = ({ selectedPivot, setSelectedPivot, pivotCount, tabs }: TabListP
           label={
             <span className="flex items-center gap-2">
               <span className="text-sm leading-none">{label}</span>
-              {pivotCount[key] > 0 ? <span className="text-xl font-bold leading-none">{pivotCount[key]}</span> : ''}
+              {pivotCount && pivotCount[key] > 0 ? (
+                <span className="text-xl font-bold leading-none">{pivotCount[key]}</span>
+              ) : (
+                ''
+              )}
             </span>
           }
-          onClick={() => setSelectedPivot(key)}
+          onClick={() => {
+            setSelectedPivot(key);
+            if (isTrigger) {
+              if (trigger && setTrigger) {
+                setTrigger(!trigger);
+              }
+            }
+          }}
         />
       ))}
     </Tabs>
