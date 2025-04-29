@@ -1,3 +1,10 @@
+# [1.28.0](https://github.com/anishkumar127/weavify/compare/v1.27.1...v1.28.0) (2025-04-29)
+
+
+### Features
+
+* make pivotCount and trigger props optional in TabList component ([044b5ec](https://github.com/anishkumar127/weavify/commit/044b5ecef2fc4a1c81f167d88992a48789bdb93d))
+
 ## [1.27.1](https://github.com/anishkumar127/weavify/compare/v1.27.0...v1.27.1) (2025-04-18)
 
 
