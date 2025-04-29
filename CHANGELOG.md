@@ -1,3 +1,10 @@
+## [1.27.1](https://github.com/anishkumar127/weavify/compare/v1.27.0...v1.27.1) (2025-04-18)
+
+
+### Bug Fixes
+
+* handle potential null value in placeholder and width properties in MultiDropdown ([f0b5c8a](https://github.com/anishkumar127/weavify/commit/f0b5c8a51482d20c03c0e481e728ac8aeb9049b7))
+
 # [1.27.0](https://github.com/anishkumar127/weavify/compare/v1.26.0...v1.27.0) (2025-04-18)
 
 
